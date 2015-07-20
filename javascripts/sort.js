@@ -1,8 +1,8 @@
 $(function(){
     function all(node){
         var type = $(node).parent().parent(".block").attr("data-type");
-        if (type == "1" || type == "2") {
-            if ($(node).attr("data-role") == 0) {
+        if (type) {
+            if (parseInt($(node).attr("data-role")) % 1000 == 0) {
                 $(node).parent().parent(".block").find("p").removeClass("z-select");
                 $(node).addClass("z-select");
             }

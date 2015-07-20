@@ -286,7 +286,7 @@ body{
     float: left;
 }
 .g-footer{
-    height: 123px;
+    height: 224px;
     width: 100%;
     float: left;
     background: url(../images/footer.png) repeat;
@@ -294,26 +294,28 @@ body{
     .g-footer_main {
         width: 1000px;
         height:83px;
-        padding:20px 0;
+        padding:70px 0;
         margin:0 auto;
         .g-logo_big {
             width: 201px;
             height: 83px;
             float: left;
             background: url(../images/logo_big.png) no-repeat;
-            margin-right: 55px;
+            margin-right: 25px;
         }
         ul.g-footer_links {
             height: 100%;
-            width: auto;
+            width: 336px;
             float: left;
-            margin-right: 36px;
+            margin-right: 16px;
             li {
-                width: 100%;
-                height: 20px;
+                width: auto;
+                height: 30px;
+                float: left;
                 font-size: 14px;
-                line-height: 20px;
+                line-height: 30px;
                 font-weight: 900;
+                margin-right: 30px;
                 a {
                     display: block;
                     width: 100%;
@@ -324,16 +326,17 @@ body{
             }
             li.link_head {
                 height: 28px;
+                width: 100%;
                 color: #e8554e;
                 font-size: 18px;
                 line-height: 28px;
             }
         }
         .g-footer_copy {
-            height: 51px;
-            width: 450px;
-            padding-top: 32px;
-            float: left;
+            height: 53px;
+            width: 414px;
+            padding-top: 28px;
+            float: right;
             ul.footer_list {
                 li,span {
                     width: auto;
@@ -350,7 +353,7 @@ body{
                     display: block;
                     text-decoration: none;
                     font-size: 16px;
-                    line-height: 20px;
+                    line-height: 22px;
                 }
             }
             p {
@@ -358,6 +361,9 @@ body{
                 float: left;
                 font-weight: 900;
                 color: #070a22;
+            }
+            p:first-child {
+                line-height: 22px
             }
         }
     }
@@ -382,14 +388,13 @@ body{
             float: left;
         }
         .act_summry {
-            width: 200px;
+            width: 218px;
             height: 75px;
             float: left;
-            padding:20px 49px;
+            padding:20px 40px;
             color: #070a22;
             font-size: 18px;
             font-weight: 600;
-            text-align:center;
             cursor: pointer;
         }
         .act_footer{
