@@ -6,7 +6,7 @@ $(function(){
             type:"POST",
             url:"",
             async:false,
-            data:{"text_return":text_return}，
+            data:{"text_return":text_return},
             dataType:"json",
             success:function(data){
                 if (data) {
