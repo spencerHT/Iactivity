@@ -1,0 +1,171 @@
+$banerHeight: 0;
+$banner: none;
+@import "prototype";
+
+#activity_main {
+    width: 1002px;
+    height: 1469px;
+    margin: 81px auto 0;
+    position: relative;
+    #user {
+        width: 1000px;
+        height: 220px;
+        float: left;
+        background-color: white;
+        border: #e3e2e0 1px solid;
+        .img_top {
+            width: 149px;
+            height: 38px;
+            position: absolute;
+            left: 14px;
+            top: -39px;
+            border: #e3e2e0 1px solid;
+            border-bottom-width:0;
+            border-top-left-radius:3px;
+            border-top-right-radius:3px;
+            background-color: white;
+            z-index: 2;
+        }
+        .user_left {
+            width: 139px;
+            height: 203px;
+            position: absolute;
+            left: 20px;
+            top: -33px;
+            z-index: 3;
+            img.user_head {
+                width: 139px;
+                height: 139px;
+                float: left;
+            }
+            .points {
+                width: 139px;
+                height: 48px;
+                margin: 8px 0;
+                float: left;
+                .parts {
+                    width: 69px;
+                    height: 30px;
+                    float: left;
+                    padding: 9px 0;
+                    p {
+                        width: 100%;
+                        height: auto;
+                        font-size: 14px;
+                        line-height: 15px;
+                        text-align: center;
+                        color: #999999;
+                        float: left;
+                    }
+                    p.number {
+                        font-weight: 900;
+                        color: #070a22;
+                    }
+                }
+                .border-right {
+                    border-right: #ebeae8 1px solid;
+                }
+            }
+        }
+        .user_right {
+            width: 806px;
+            height: 144px;
+            padding: 18px 10px 0 184px;
+            float: left;
+            .user_name {
+                width: auto;
+                height: 30px;
+                float: left;
+                font-size: 24px;
+                line-height: 30px;
+                color: #070a22;
+            }
+            a.user_fun_mine {
+                width: 98px;
+                height: 28px;
+                float: right;
+                display: block;
+                margin-right:10px;
+                border: #cbcbcb 1px solid;
+                font-size: 18px;
+                line-height: 28px;
+                color: #999999;
+                text-align: center;
+                text-decoration: none;
+            }
+            a.mail {
+                width: 28px;
+                height: 28px;
+                float: right;
+                border: #cbcbcb 1px solid;
+                margin-right: 10px;
+                background: url(../images/mail.png) center no-repeat;
+            }
+            a.interest {
+                width: 83px;
+                height: 30px;
+                background: url(../images/interest.jpg) repeat-x;
+                float: right;
+                margin-right: 8px;
+                text-align: center;
+                color: white;
+                font-size: 18px;
+                line-height: 30px;
+                text-decoration: none;
+            }
+        }
+        ul.user_acts {
+            width: 100%;
+            height: 35px;
+            float: left;
+            margin: 10px 0 6px;
+            li {
+                width: auto;
+                height: 35px;
+                float: left;
+                font-size: 18px;
+                line-height: 35px;
+                padding: 0 28px;
+                color: #999999;
+                border-right: #ebeae8 1px solid;
+                cursor: pointer;
+            }
+            li.selected {
+                color: #2f2e2e;
+            }
+            li.last {
+                border-right-width:0;
+            }
+        }
+    }
+    .acts_main {
+        width: 1002px;
+        height: auto;
+        float: left;
+        padding-top:49px;
+        display: none;
+        .m-act_out {
+            margin-bottom: 20px;
+            .sign {
+                width: 223px;
+                height: 30px;
+                position:absolute;
+                top: 0;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+            .act_week {
+                background: url(../images/act_week.png) no-repeat;
+            }
+            .act_now {
+                background: url(../images/act_now.png) no-repeat;
+            }
+            .act_recommend {
+                background: url(../images/act_recommend.png) no-repeat;
+            }
+        }
+    }
+    .show {
+        display: block;
+    }
+}

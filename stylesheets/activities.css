@@ -386,10 +386,10 @@ body {
 
 /* line 269, ../sass/prototype.scss */
 .g-banner {
-  height: 600px;
+  height: 0;
   width: 100%;
   float: left;
-  background: url(../images/banner.jpg) no-repeat;
+  background: none no-repeat;
   position: relative;
   background-size: 100%;
 }
@@ -652,44 +652,196 @@ body {
   margin-right: 50px;
 }
 
-/* line 3, ../sass/index.scss */
-#index_main {
-  margin: 0 auto;
+/* line 5, ../sass/activities.scss */
+#activity_main {
+  width: 1002px;
+  height: 1469px;
+  margin: 81px auto 0;
+  position: relative;
+}
+/* line 10, ../sass/activities.scss */
+#activity_main #user {
   width: 1000px;
-  height: auto;
-}
-
-/* line 8, ../sass/index.scss */
-.m-block {
+  height: 220px;
   float: left;
-  width: auto;
-  height: auto;
-  padding-top: 40px;
+  background-color: white;
+  border: #e3e2e0 1px solid;
 }
-/* line 13, ../sass/index.scss */
-.m-block .block_head {
+/* line 16, ../sass/activities.scss */
+#activity_main #user .img_top {
+  width: 149px;
+  height: 38px;
+  position: absolute;
+  left: 14px;
+  top: -39px;
+  border: #e3e2e0 1px solid;
+  border-bottom-width: 0;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-color: white;
+  z-index: 2;
+}
+/* line 29, ../sass/activities.scss */
+#activity_main #user .user_left {
+  width: 139px;
+  height: 203px;
+  position: absolute;
+  left: 20px;
+  top: -33px;
+  z-index: 3;
+}
+/* line 36, ../sass/activities.scss */
+#activity_main #user .user_left img.user_head {
+  width: 139px;
+  height: 139px;
+  float: left;
+}
+/* line 41, ../sass/activities.scss */
+#activity_main #user .user_left .points {
+  width: 139px;
+  height: 48px;
+  margin: 8px 0;
+  float: left;
+}
+/* line 46, ../sass/activities.scss */
+#activity_main #user .user_left .points .parts {
+  width: 69px;
+  height: 30px;
+  float: left;
+  padding: 9px 0;
+}
+/* line 51, ../sass/activities.scss */
+#activity_main #user .user_left .points .parts p {
   width: 100%;
   height: auto;
+  font-size: 14px;
+  line-height: 15px;
+  text-align: center;
+  color: #999999;
   float: left;
 }
-/* line 17, ../sass/index.scss */
-.m-block .block_head .lines {
-  width: 400px;
-  height: 1px;
-  line-height: 1px;
-  float: left;
-  overflow: hidden;
-  margin: 12px 0;
-  background-color: #cbcbcb;
+/* line 60, ../sass/activities.scss */
+#activity_main #user .user_left .points .parts p.number {
+  font-weight: 900;
+  color: #070a22;
 }
-/* line 26, ../sass/index.scss */
-.m-block .block_head .header {
-  width: 200px;
-  height: 25px;
+/* line 65, ../sass/activities.scss */
+#activity_main #user .user_left .points .border-right {
+  border-right: #ebeae8 1px solid;
+}
+/* line 70, ../sass/activities.scss */
+#activity_main #user .user_right {
+  width: 806px;
+  height: 144px;
+  padding: 18px 10px 0 184px;
+  float: left;
+}
+/* line 75, ../sass/activities.scss */
+#activity_main #user .user_right .user_name {
+  width: auto;
+  height: 30px;
+  float: left;
   font-size: 24px;
-  float: left;
+  line-height: 30px;
+  color: #070a22;
+}
+/* line 83, ../sass/activities.scss */
+#activity_main #user .user_right a.user_fun_mine {
+  width: 98px;
+  height: 28px;
+  float: right;
+  display: block;
+  margin-right: 10px;
+  border: #cbcbcb 1px solid;
+  font-size: 18px;
+  line-height: 28px;
   color: #999999;
   text-align: center;
-  line-height: 25px;
-  margin-bottom: 40px;
+  text-decoration: none;
+}
+/* line 96, ../sass/activities.scss */
+#activity_main #user .user_right a.mail {
+  width: 28px;
+  height: 28px;
+  float: right;
+  border: #cbcbcb 1px solid;
+  margin-right: 10px;
+  background: url(../images/mail.png) center no-repeat;
+}
+/* line 104, ../sass/activities.scss */
+#activity_main #user .user_right a.interest {
+  width: 83px;
+  height: 30px;
+  background: url(../images/interest.jpg) repeat-x;
+  float: right;
+  margin-right: 8px;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  line-height: 30px;
+  text-decoration: none;
+}
+/* line 117, ../sass/activities.scss */
+#activity_main #user ul.user_acts {
+  width: 100%;
+  height: 35px;
+  float: left;
+  margin: 10px 0 6px;
+}
+/* line 122, ../sass/activities.scss */
+#activity_main #user ul.user_acts li {
+  width: auto;
+  height: 35px;
+  float: left;
+  font-size: 18px;
+  line-height: 35px;
+  padding: 0 28px;
+  color: #999999;
+  border-right: #ebeae8 1px solid;
+  cursor: pointer;
+}
+/* line 133, ../sass/activities.scss */
+#activity_main #user ul.user_acts li.selected {
+  color: #2f2e2e;
+}
+/* line 136, ../sass/activities.scss */
+#activity_main #user ul.user_acts li.last {
+  border-right-width: 0;
+}
+/* line 141, ../sass/activities.scss */
+#activity_main .acts_main {
+  width: 1002px;
+  height: auto;
+  float: left;
+  padding-top: 49px;
+  display: none;
+}
+/* line 147, ../sass/activities.scss */
+#activity_main .acts_main .m-act_out {
+  margin-bottom: 20px;
+}
+/* line 149, ../sass/activities.scss */
+#activity_main .acts_main .m-act_out .sign {
+  width: 223px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* line 157, ../sass/activities.scss */
+#activity_main .acts_main .m-act_out .act_week {
+  background: url(../images/act_week.png) no-repeat;
+}
+/* line 160, ../sass/activities.scss */
+#activity_main .acts_main .m-act_out .act_now {
+  background: url(../images/act_now.png) no-repeat;
+}
+/* line 163, ../sass/activities.scss */
+#activity_main .acts_main .m-act_out .act_recommend {
+  background: url(../images/act_recommend.png) no-repeat;
+}
+/* line 168, ../sass/activities.scss */
+#activity_main .show {
+  display: block;
 }

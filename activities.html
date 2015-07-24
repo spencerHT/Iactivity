@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta name="render" content="webkit" />
+    <meta charset="UTF-8" />
+    <title>活动页</title>
+    <link href="stylesheets/activities.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="javascripts/jquery-1.7.2.min.js"></script>
+    <script src="javascripts/prototype.js"></script>
+    <script src="javascripts/activities.js"></script>
+</head>
+<body>
+    <div class="g-header">
+        <img src="images/logo.png" alt="logo" class="g-logo">
+        <ul class="g-left_list">
+            <li class="g-left_list_li g-block1">
+                <a href="javascript:void(0)"></a>
+            </li>
+            <li class="g-left_list_li g-block2">
+                <a href="javascript:void(0)"></a>
+            </li>
+            <li class="g-left_list_li g-block3">
+                <a href="javascript:void(0)"></a>
+            </li>
+            <li class="g-left_list_li g-block4">
+                <div class="dots">
+                    <div class="triangle_top"></div>
+                    <ul class="dots_ul">
+                        <li>
+                            <a href="javascripti:void(0)">新手帮助</a>
+                        </li>
+                        <span>&nbsp;&middot;&nbsp;</span>
+                        <li>
+                            <a href="javascripti:void(0)">反馈</a>
+                        </li>
+                        <span>&nbsp;&middot;&nbsp;</span>
+                        <li>
+                            <a href="javascripti:void(0)">关于我们</a>
+                        </li>
+                    </ul>    
+                </div>
+
+            </li>
+        </ul>
+        <!-- <a href="javascript:void(0)" class="g-enter">登录/注册</a>
+    -->
+    <div class="g-entered">
+        <div class="triangle"></div>
+        <img src="images/person_head.jpg" alt="用户头像" class="person_head">
+        <p class="person_name">cyeah~</p>
+        <ul class="g-right_list">
+            <li>
+                <a href="javacript:void(0)">
+                    <div class="icon1"></div>
+                    <p>我的缤纷</p>
+                </a>
+            </li>
+            <li>
+                <a href="javacript:void(0)">
+                    <div class="icon2"></div>
+                    <p>私信</p>
+                </a>
+            </li>
+            <li>
+                <a href="javacript:void(0)">
+                    <div class="icon3"></div>
+                    <p>账号设置</p>
+                </a>
+            </li>
+            <li>
+                <a href="javacript:void(0)">
+                    <div class="icon4"></div>
+                    <p>退出账号</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <form action="#" class="g-search">
+        <input type="text">
+        <input type="submit" value=""></form>
+</div>
+<div class="g-mid clearfix">
+    <div id="activity_main">
+        <div id="user">
+            <div class="img_top"></div>
+            <div class="user_left">
+                <img src="images/person_head.jpg" alt="用户头像" class="user_head">
+                <div class="points">
+                    <div class="parts border-right">
+                        <p class="number">28</p>
+                        <p>关注</p>
+                    </div>
+                    <div class="parts">
+                        <p class="number">200</p>
+                        <p>粉丝</p>
+                    </div>
+                </div>
+            </div>
+            <div class="user_right">
+                <p class="user_name">c.yeah~哈哈哈我就是觉得她和我一样是长脸hhh</p>
+<!--                 <a href="javascript:void(0)" class="user_fun_mine">账号设置</a>
+                <a href="javascript:void(0)" class="user_fun_mine">个人简历</a>
+ -->        
+                <a href="javascript:void(0)" class="mail"></a>
+                <a href="javascript:void(0)" class="interest">+&nbsp;关注</a>    
+            </div>
+            <ul class="user_acts">
+                <li class="selected">28参加的活动</li>
+                <li>13关注的活动</li>
+                <li class="last">13已结束的活动</li>
+            </ul>
+        </div>
+        <div class="acts_main show">
+            <div class="m-act_out m-act_1">
+                <div class="m-act">
+                    <div class="sign act_now"></div>
+                    <img src="images/activities_img.jpg" alt="活动图片" class="act_img">
+                    <p class="act_summry">活动之不要和烨烨抢西瓜字体是冬青黑体啦啦啦我都好长时间没用黑体了</p>
+                    <div class="act_footer">
+                        <p class="clock"><img src="images/m-act_clock.png" alt="" width="21" height="21"><span>2015.06.28</span></p>
+                        <p class="pin"><img src="images/m-act_pin.png" alt="" width="15" height="20"><span>兴隆山宿舍</span></p>
+                    </div>
+                    <div class="summry_more">
+                        <div class="triangle_top"></div>
+                        <p class="summry_text">介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦</p>
+                    </div>
+                </div>                
+                <div class="down_">活动简介</div>
+            </div>
+            <div class="m-act_out m-act_1">
+                <div class="m-act">
+                    <div class="sign act_week"></div>
+                    <img src="images/activities_img.jpg" alt="活动图片" class="act_img">
+                    <p class="act_summry">活动之不要和烨烨抢西瓜字体是冬青黑体啦啦啦我都好长时间没用黑体了</p>
+                    <div class="act_footer">
+                        <p class="clock"><img src="images/m-act_clock.png" alt="" width="21" height="21"><span>2015.06.28</span></p>
+                        <p class="pin"><img src="images/m-act_pin.png" alt="" width="15" height="20"><span>兴隆山宿舍</span></p>
+                    </div>
+                    <div class="summry_more">
+                        <div class="triangle_top"></div>
+                        <p class="summry_text">介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦</p>
+                    </div>
+                </div>                
+                <div class="down_">活动简介</div>
+            </div>
+            <div class="m-act_out">
+                <div class="m-act">
+                    <img src="images/activities_img.jpg" alt="活动图片" class="act_img">
+                    <p class="act_summry">活动之不要和烨烨抢西瓜字体是冬青黑体啦啦啦我都好长时间没用黑体了</p>
+                    <div class="act_footer">
+                        <p class="clock"><img src="images/m-act_clock.png" alt="" width="21" height="21"><span>2015.06.28</span></p>
+                        <p class="pin"><img src="images/m-act_pin.png" alt="" width="15" height="20"><span>兴隆山宿舍</span></p>
+                    </div>
+                    <div class="summry_more">
+                        <div class="triangle_top"></div>
+                        <p class="summry_text">介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦</p>
+                    </div>
+                </div>                
+                <div class="down_">活动简介</div>
+            </div>
+            <div class="m-act_out m-act_1">
+                <div class="m-act">
+                    <img src="images/activities_img.jpg" alt="活动图片" class="act_img">
+                    <p class="act_summry">活动之不要和烨烨抢西瓜字体是冬青黑体啦啦啦我都好长时间没用黑体了</p>
+                    <div class="act_footer">
+                        <p class="clock"><img src="images/m-act_clock.png" alt="" width="21" height="21"><span>2015.06.28</span></p>
+                        <p class="pin"><img src="images/m-act_pin.png" alt="" width="15" height="20"><span>兴隆山宿舍</span></p>
+                    </div>
+                    <div class="summry_more">
+                        <div class="triangle_top"></div>
+                        <p class="summry_text">介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦</p>
+                    </div>
+                </div>                
+                <div class="down_">活动简介</div>
+            </div>
+            <div class="m-act_out m-act_1">
+                <div class="m-act">
+                    <img src="images/activities_img.jpg" alt="活动图片" class="act_img">
+                    <p class="act_summry">活动之不要和烨烨抢西瓜字体是冬青黑体啦啦啦我都好长时间没用黑体了</p>
+                    <div class="act_footer">
+                        <p class="clock"><img src="images/m-act_clock.png" alt="" width="21" height="21"><span>2015.06.28</span></p>
+                        <p class="pin"><img src="images/m-act_pin.png" alt="" width="15" height="20"><span>兴隆山宿舍</span></p>
+                    </div>
+                    <div class="summry_more">
+                        <div class="triangle_top"></div>
+                        <p class="summry_text">介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦</p>
+                    </div>
+                </div>                
+                <div class="down_">活动简介</div>
+            </div>
+            <div class="m-act_out">
+                <div class="m-act">
+                    <img src="images/activities_img.jpg" alt="活动图片" class="act_img">
+                    <p class="act_summry">活动之不要和烨烨抢西瓜字体是冬青黑体啦啦啦我都好长时间没用黑体了</p>
+                    <div class="act_footer">
+                        <p class="clock"><img src="images/m-act_clock.png" alt="" width="21" height="21"><span>2015.06.28</span></p>
+                        <p class="pin"><img src="images/m-act_pin.png" alt="" width="15" height="20"><span>兴隆山宿舍</span></p>
+                    </div>
+                    <div class="summry_more">
+                        <div class="triangle_top"></div>
+                        <p class="summry_text">介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦</p>
+                    </div>
+                </div>                
+                <div class="down_">活动简介</div>
+            </div>
+            <div class="m-act_out m-act_1">
+                <div class="m-act">
+                    <img src="images/activities_img.jpg" alt="活动图片" class="act_img">
+                    <p class="act_summry">活动之不要和烨烨抢西瓜字体是冬青黑体啦啦啦我都好长时间没用黑体了</p>
+                    <div class="act_footer">
+                        <p class="clock"><img src="images/m-act_clock.png" alt="" width="21" height="21"><span>2015.06.28</span></p>
+                        <p class="pin"><img src="images/m-act_pin.png" alt="" width="15" height="20"><span>兴隆山宿舍</span></p>
+                    </div>
+                    <div class="summry_more">
+                        <div class="triangle_top"></div>
+                        <p class="summry_text">介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦</p>
+                    </div>
+                </div>                
+                <div class="down_">活动简介</div>
+            </div>
+            <div class="m-act_out m-act_1">
+                <div class="m-act">
+                    <img src="images/activities_img.jpg" alt="活动图片" class="act_img">
+                    <p class="act_summry">活动之不要和烨烨抢西瓜字体是冬青黑体啦啦啦我都好长时间没用黑体了</p>
+                    <div class="act_footer">
+                        <p class="clock"><img src="images/m-act_clock.png" alt="" width="21" height="21"><span>2015.06.28</span></p>
+                        <p class="pin"><img src="images/m-act_pin.png" alt="" width="15" height="20"><span>兴隆山宿舍</span></p>
+                    </div>
+                    <div class="summry_more">
+                        <div class="triangle_top"></div>
+                        <p class="summry_text">介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦</p>
+                    </div>
+                </div>                
+                <div class="down_">活动简介</div>
+            </div>
+            <div class="m-act_out">
+                <div class="m-act">
+                    <img src="images/activities_img.jpg" alt="活动图片" class="act_img">
+                    <p class="act_summry">活动之不要和烨烨抢西瓜字体是冬青黑体啦啦啦我都好长时间没用黑体了</p>
+                    <div class="act_footer">
+                        <p class="clock"><img src="images/m-act_clock.png" alt="" width="21" height="21"><span>2015.06.28</span></p>
+                        <p class="pin"><img src="images/m-act_pin.png" alt="" width="15" height="20"><span>兴隆山宿舍</span></p>
+                    </div>
+                    <div class="summry_more">
+                        <div class="triangle_top"></div>
+                        <p class="summry_text">介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦</p>
+                    </div>
+                </div>                
+                <div class="down_">活动简介</div>
+            </div>
+        </div>
+        <div class="acts_main">
+            <div class="m-act_out m-act_1">
+                <div class="m-act">
+                    <div class="sign act_recommend"></div>
+                    <img src="images/activities_img.jpg" alt="活动图片" class="act_img">
+                    <p class="act_summry">活动之不要和烨烨抢西瓜字体是冬青黑体啦啦啦我都好长时间没用黑体了</p>
+                    <div class="act_footer">
+                        <p class="clock"><img src="images/m-act_clock.png" alt="" width="21" height="21"><span>2015.06.28</span></p>
+                        <p class="pin"><img src="images/m-act_pin.png" alt="" width="15" height="20"><span>兴隆山宿舍</span></p>
+                    </div>
+                    <div class="summry_more">
+                        <div class="triangle_top"></div>
+                        <p class="summry_text">介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦</p>
+                    </div>
+                </div>                
+                <div class="down_">活动简介</div>
+            </div>
+            <div class="m-act_out m-act_1">
+                <div class="m-act">
+                    <div class="sign act_recommend"></div>
+                    <img src="images/activities_img.jpg" alt="活动图片" class="act_img">
+                    <p class="act_summry">活动之不要和烨烨抢西瓜字体是冬青黑体啦啦啦我都好长时间没用黑体了</p>
+                    <div class="act_footer">
+                        <p class="clock"><img src="images/m-act_clock.png" alt="" width="21" height="21"><span>2015.06.28</span></p>
+                        <p class="pin"><img src="images/m-act_pin.png" alt="" width="15" height="20"><span>兴隆山宿舍</span></p>
+                    </div>
+                    <div class="summry_more">
+                        <div class="triangle_top"></div>
+                        <p class="summry_text">介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦</p>
+                    </div>
+                </div>                
+                <div class="down_">活动简介</div>
+            </div>
+            <div class="m-act_out">
+                <div class="m-act">
+                    <div class="sign act_recommend"></div>
+                    <img src="images/activities_img.jpg" alt="活动图片" class="act_img">
+                    <p class="act_summry">活动之不要和烨烨抢西瓜字体是冬青黑体啦啦啦我都好长时间没用黑体了</p>
+                    <div class="act_footer">
+                        <p class="clock"><img src="images/m-act_clock.png" alt="" width="21" height="21"><span>2015.06.28</span></p>
+                        <p class="pin"><img src="images/m-act_pin.png" alt="" width="15" height="20"><span>兴隆山宿舍</span></p>
+                    </div>
+                    <div class="summry_more">
+                        <div class="triangle_top"></div>
+                        <p class="summry_text">介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦</p>
+                    </div>
+                </div>                
+                <div class="down_">活动简介</div>
+            </div>
+            <div class="m-act_out m-act_1">
+                <div class="m-act">
+                    <img src="images/activities_img.jpg" alt="活动图片" class="act_img">
+                    <p class="act_summry">活动之不要和烨烨抢西瓜字体是冬青黑体啦啦啦我都好长时间没用黑体了</p>
+                    <div class="act_footer">
+                        <p class="clock"><img src="images/m-act_clock.png" alt="" width="21" height="21"><span>2015.06.28</span></p>
+                        <p class="pin"><img src="images/m-act_pin.png" alt="" width="15" height="20"><span>兴隆山宿舍</span></p>
+                    </div>
+                    <div class="summry_more">
+                        <div class="triangle_top"></div>
+                        <p class="summry_text">介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦</p>
+                    </div>
+                </div>                
+                <div class="down_">活动简介</div>
+            </div>
+            <div class="m-act_out m-act_1">
+                <div class="m-act">
+                    <img src="images/activities_img.jpg" alt="活动图片" class="act_img">
+                    <p class="act_summry">活动之不要和烨烨抢西瓜字体是冬青黑体啦啦啦我都好长时间没用黑体了</p>
+                    <div class="act_footer">
+                        <p class="clock"><img src="images/m-act_clock.png" alt="" width="21" height="21"><span>2015.06.28</span></p>
+                        <p class="pin"><img src="images/m-act_pin.png" alt="" width="15" height="20"><span>兴隆山宿舍</span></p>
+                    </div>
+                    <div class="summry_more">
+                        <div class="triangle_top"></div>
+                        <p class="summry_text">介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦</p>
+                    </div>
+                </div>                
+                <div class="down_">活动简介</div>
+            </div>
+            <div class="m-act_out">
+                <div class="m-act">
+                    <img src="images/activities_img.jpg" alt="活动图片" class="act_img">
+                    <p class="act_summry">活动之不要和烨烨抢西瓜字体是冬青黑体啦啦啦我都好长时间没用黑体了</p>
+                    <div class="act_footer">
+                        <p class="clock"><img src="images/m-act_clock.png" alt="" width="21" height="21"><span>2015.06.28</span></p>
+                        <p class="pin"><img src="images/m-act_pin.png" alt="" width="15" height="20"><span>兴隆山宿舍</span></p>
+                    </div>
+                    <div class="summry_more">
+                        <div class="triangle_top"></div>
+                        <p class="summry_text">介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦</p>
+                    </div>
+                </div>                
+                <div class="down_">活动简介</div>
+            </div>
+            <div class="m-act_out m-act_1">
+                <div class="m-act">
+                    <img src="images/activities_img.jpg" alt="活动图片" class="act_img">
+                    <p class="act_summry">活动之不要和烨烨抢西瓜字体是冬青黑体啦啦啦我都好长时间没用黑体了</p>
+                    <div class="act_footer">
+                        <p class="clock"><img src="images/m-act_clock.png" alt="" width="21" height="21"><span>2015.06.28</span></p>
+                        <p class="pin"><img src="images/m-act_pin.png" alt="" width="15" height="20"><span>兴隆山宿舍</span></p>
+                    </div>
+                    <div class="summry_more">
+                        <div class="triangle_top"></div>
+                        <p class="summry_text">介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦</p>
+                    </div>
+                </div>                
+                <div class="down_">活动简介</div>
+            </div>
+            <div class="m-act_out m-act_1">
+                <div class="m-act">
+                    <img src="images/activities_img.jpg" alt="活动图片" class="act_img">
+                    <p class="act_summry">活动之不要和烨烨抢西瓜字体是冬青黑体啦啦啦我都好长时间没用黑体了</p>
+                    <div class="act_footer">
+                        <p class="clock"><img src="images/m-act_clock.png" alt="" width="21" height="21"><span>2015.06.28</span></p>
+                        <p class="pin"><img src="images/m-act_pin.png" alt="" width="15" height="20"><span>兴隆山宿舍</span></p>
+                    </div>
+                    <div class="summry_more">
+                        <div class="triangle_top"></div>
+                        <p class="summry_text">介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦</p>
+                    </div>
+                </div>                
+                <div class="down_">活动简介</div>
+            </div>
+            <div class="m-act_out">
+                <div class="m-act">
+                    <img src="images/activities_img.jpg" alt="活动图片" class="act_img">
+                    <p class="act_summry">活动之不要和烨烨抢西瓜字体是冬青黑体啦啦啦我都好长时间没用黑体了</p>
+                    <div class="act_footer">
+                        <p class="clock"><img src="images/m-act_clock.png" alt="" width="21" height="21"><span>2015.06.28</span></p>
+                        <p class="pin"><img src="images/m-act_pin.png" alt="" width="15" height="20"><span>兴隆山宿舍</span></p>
+                    </div>
+                    <div class="summry_more">
+                        <div class="triangle_top"></div>
+                        <p class="summry_text">介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦</p>
+                    </div>
+                </div>                
+                <div class="down_">活动简介</div>
+            </div>
+        </div>
+        <div class="acts_main">
+            <div class="m-act_out m-act_1">
+                <div class="m-act">
+                    <img src="images/activities_img.jpg" alt="活动图片" class="act_img">
+                    <p class="act_summry">活动之不要和烨烨抢西瓜字体是冬青黑体啦啦啦我都好长时间没用黑体了</p>
+                    <div class="act_footer">
+                        <p class="clock"><img src="images/m-act_clock.png" alt="" width="21" height="21"><span>2015.06.28</span></p>
+                        <p class="pin"><img src="images/m-act_pin.png" alt="" width="15" height="20"><span>兴隆山宿舍</span></p>
+                    </div>
+                    <div class="summry_more">
+                        <div class="triangle_top"></div>
+                        <p class="summry_text">介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦</p>
+                    </div>
+                </div>                
+                <div class="down_">活动简介</div>
+            </div>
+            <div class="m-act_out m-act_1">
+                <div class="m-act">
+                    <img src="images/activities_img.jpg" alt="活动图片" class="act_img">
+                    <p class="act_summry">活动之不要和烨烨抢西瓜字体是冬青黑体啦啦啦我都好长时间没用黑体了</p>
+                    <div class="act_footer">
+                        <p class="clock"><img src="images/m-act_clock.png" alt="" width="21" height="21"><span>2015.06.28</span></p>
+                        <p class="pin"><img src="images/m-act_pin.png" alt="" width="15" height="20"><span>兴隆山宿舍</span></p>
+                    </div>
+                    <div class="summry_more">
+                        <div class="triangle_top"></div>
+                        <p class="summry_text">介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦</p>
+                    </div>
+                </div>                
+                <div class="down_">活动简介</div>
+            </div>
+            <div class="m-act_out">
+                <div class="m-act">
+                    <img src="images/activities_img.jpg" alt="活动图片" class="act_img">
+                    <p class="act_summry">活动之不要和烨烨抢西瓜字体是冬青黑体啦啦啦我都好长时间没用黑体了</p>
+                    <div class="act_footer">
+                        <p class="clock"><img src="images/m-act_clock.png" alt="" width="21" height="21"><span>2015.06.28</span></p>
+                        <p class="pin"><img src="images/m-act_pin.png" alt="" width="15" height="20"><span>兴隆山宿舍</span></p>
+                    </div>
+                    <div class="summry_more">
+                        <div class="triangle_top"></div>
+                        <p class="summry_text">介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦</p>
+                    </div>
+                </div>                
+                <div class="down_">活动简介</div>
+            </div>
+            <div class="m-act_out m-act_1">
+                <div class="m-act">
+                    <img src="images/activities_img.jpg" alt="活动图片" class="act_img">
+                    <p class="act_summry">活动之不要和烨烨抢西瓜字体是冬青黑体啦啦啦我都好长时间没用黑体了</p>
+                    <div class="act_footer">
+                        <p class="clock"><img src="images/m-act_clock.png" alt="" width="21" height="21"><span>2015.06.28</span></p>
+                        <p class="pin"><img src="images/m-act_pin.png" alt="" width="15" height="20"><span>兴隆山宿舍</span></p>
+                    </div>
+                    <div class="summry_more">
+                        <div class="triangle_top"></div>
+                        <p class="summry_text">介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦</p>
+                    </div>
+                </div>                
+                <div class="down_">活动简介</div>
+            </div>
+            <div class="m-act_out m-act_1">
+                <div class="m-act">
+                    <img src="images/activities_img.jpg" alt="活动图片" class="act_img">
+                    <p class="act_summry">活动之不要和烨烨抢西瓜字体是冬青黑体啦啦啦我都好长时间没用黑体了</p>
+                    <div class="act_footer">
+                        <p class="clock"><img src="images/m-act_clock.png" alt="" width="21" height="21"><span>2015.06.28</span></p>
+                        <p class="pin"><img src="images/m-act_pin.png" alt="" width="15" height="20"><span>兴隆山宿舍</span></p>
+                    </div>
+                    <div class="summry_more">
+                        <div class="triangle_top"></div>
+                        <p class="summry_text">介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦</p>
+                    </div>
+                </div>                
+                <div class="down_">活动简介</div>
+            </div>
+            <div class="m-act_out">
+                <div class="m-act">
+                    <img src="images/activities_img.jpg" alt="活动图片" class="act_img">
+                    <p class="act_summry">活动之不要和烨烨抢西瓜字体是冬青黑体啦啦啦我都好长时间没用黑体了</p>
+                    <div class="act_footer">
+                        <p class="clock"><img src="images/m-act_clock.png" alt="" width="21" height="21"><span>2015.06.28</span></p>
+                        <p class="pin"><img src="images/m-act_pin.png" alt="" width="15" height="20"><span>兴隆山宿舍</span></p>
+                    </div>
+                    <div class="summry_more">
+                        <div class="triangle_top"></div>
+                        <p class="summry_text">介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦</p>
+                    </div>
+                </div>                
+                <div class="down_">活动简介</div>
+            </div>
+            <div class="m-act_out m-act_1">
+                <div class="m-act">
+                    <img src="images/activities_img.jpg" alt="活动图片" class="act_img">
+                    <p class="act_summry">活动之不要和烨烨抢西瓜字体是冬青黑体啦啦啦我都好长时间没用黑体了</p>
+                    <div class="act_footer">
+                        <p class="clock"><img src="images/m-act_clock.png" alt="" width="21" height="21"><span>2015.06.28</span></p>
+                        <p class="pin"><img src="images/m-act_pin.png" alt="" width="15" height="20"><span>兴隆山宿舍</span></p>
+                    </div>
+                    <div class="summry_more">
+                        <div class="triangle_top"></div>
+                        <p class="summry_text">介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦</p>
+                    </div>
+                </div>                
+                <div class="down_">活动简介</div>
+            </div>
+            <div class="m-act_out m-act_1">
+                <div class="m-act">
+                    <img src="images/activities_img.jpg" alt="活动图片" class="act_img">
+                    <p class="act_summry">活动之不要和烨烨抢西瓜字体是冬青黑体啦啦啦我都好长时间没用黑体了</p>
+                    <div class="act_footer">
+                        <p class="clock"><img src="images/m-act_clock.png" alt="" width="21" height="21"><span>2015.06.28</span></p>
+                        <p class="pin"><img src="images/m-act_pin.png" alt="" width="15" height="20"><span>兴隆山宿舍</span></p>
+                    </div>
+                    <div class="summry_more">
+                        <div class="triangle_top"></div>
+                        <p class="summry_text">介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦</p>
+                    </div>
+                </div>                
+                <div class="down_">活动简介</div>
+            </div>
+            <div class="m-act_out">
+                <div class="m-act">
+                    <img src="images/activities_img.jpg" alt="活动图片" class="act_img">
+                    <p class="act_summry">活动之不要和烨烨抢西瓜字体是冬青黑体啦啦啦我都好长时间没用黑体了</p>
+                    <div class="act_footer">
+                        <p class="clock"><img src="images/m-act_clock.png" alt="" width="21" height="21"><span>2015.06.28</span></p>
+                        <p class="pin"><img src="images/m-act_pin.png" alt="" width="15" height="20"><span>兴隆山宿舍</span></p>
+                    </div>
+                    <div class="summry_more">
+                        <div class="triangle_top"></div>
+                        <p class="summry_text">介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦介绍啦啦啦啦随便写点就好啦啦啦啦啦啦</p>
+                    </div>
+                </div>                
+                <div class="down_">活动简介</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="g-footer">
+    <div class="g-footer_main">
+        <div class="g-logo_big"></div>
+        <ul class="g-footer_links">
+            <li class="link_head">友情链接</li>
+            <li><a href="https://www.online.sdu.edu.cn/">学生在线</a></li>
+            <li><a href="javascript:void(0)">找队友</a></li>
+            <li><a href="javascript:void(0)">山大百科</a></li>
+        </ul>
+        <div class="g-footer_copy">
+            <ul class="footer_list">
+                <li><a href="javasript:void(0)">新手上路</a></li>
+                <span>&nbsp;&middot;&nbsp;</span>
+                <li><a href="javasript:void(0)">反馈</a></li>
+                <span>&nbsp;&middot;&nbsp;</span>
+                <li><a href="javasript:void(0)">关于缤纷</a></li>
+            </ul>
+            <p>Copyright © 2000-2015 www.online.sdu.edu.cn All Rights Reserved.</p>
+            <p>鲁ICP备030304号 SDU ICP 0009号</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -111,6 +111,16 @@ body{
             background: url(../images/g-banner4.png) center no-repeat;
             position:relative;
         }
+        li.g-block1:hover {
+            background: url(../images/g-banner1_.png) no-repeat;
+        }
+        li.g-block2:hover {
+            background: url(../images/g-banner2_.png) no-repeat;
+        }
+        li.g-block3:hover {
+            width: 64px;
+            background: url(../images/g-banner3_.png) no-repeat;
+        }        
         li.g-block1_ {
             background: url(../images/g-banner1_.png) no-repeat;
         }
@@ -295,6 +305,7 @@ body{
     height: auto;
     width: 100%;
     float: left;
+    position: relative;
 }
 .g-footer{
     height: 224px;
