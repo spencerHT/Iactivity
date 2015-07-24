@@ -652,14 +652,14 @@ body {
   margin-right: 50px;
 }
 
-/* line 5, ../sass/activities.scss */
+/* line 5, ../sass/personal.scss */
 #activity_main {
   width: 1002px;
   height: 1469px;
   margin: 81px auto 0;
   position: relative;
 }
-/* line 10, ../sass/activities.scss */
+/* line 10, ../sass/personal.scss */
 #activity_main #user {
   width: 1000px;
   height: 220px;
@@ -667,7 +667,7 @@ body {
   background-color: white;
   border: #e3e2e0 1px solid;
 }
-/* line 16, ../sass/activities.scss */
+/* line 16, ../sass/personal.scss */
 #activity_main #user .img_top {
   width: 149px;
   height: 38px;
@@ -681,7 +681,7 @@ body {
   background-color: white;
   z-index: 2;
 }
-/* line 29, ../sass/activities.scss */
+/* line 29, ../sass/personal.scss */
 #activity_main #user .user_left {
   width: 139px;
   height: 203px;
@@ -690,27 +690,27 @@ body {
   top: -33px;
   z-index: 3;
 }
-/* line 36, ../sass/activities.scss */
+/* line 36, ../sass/personal.scss */
 #activity_main #user .user_left img.user_head {
   width: 139px;
   height: 139px;
   float: left;
 }
-/* line 41, ../sass/activities.scss */
+/* line 41, ../sass/personal.scss */
 #activity_main #user .user_left .points {
   width: 139px;
   height: 48px;
   margin: 8px 0;
   float: left;
 }
-/* line 46, ../sass/activities.scss */
+/* line 46, ../sass/personal.scss */
 #activity_main #user .user_left .points .parts {
   width: 69px;
   height: 30px;
   float: left;
   padding: 9px 0;
 }
-/* line 51, ../sass/activities.scss */
+/* line 51, ../sass/personal.scss */
 #activity_main #user .user_left .points .parts p {
   width: 100%;
   height: auto;
@@ -720,23 +720,23 @@ body {
   color: #999999;
   float: left;
 }
-/* line 60, ../sass/activities.scss */
+/* line 60, ../sass/personal.scss */
 #activity_main #user .user_left .points .parts p.number {
   font-weight: 900;
   color: #070a22;
 }
-/* line 65, ../sass/activities.scss */
+/* line 65, ../sass/personal.scss */
 #activity_main #user .user_left .points .border-right {
   border-right: #ebeae8 1px solid;
 }
-/* line 70, ../sass/activities.scss */
+/* line 70, ../sass/personal.scss */
 #activity_main #user .user_right {
   width: 806px;
   height: 144px;
   padding: 18px 10px 0 184px;
   float: left;
 }
-/* line 75, ../sass/activities.scss */
+/* line 75, ../sass/personal.scss */
 #activity_main #user .user_right .user_name {
   width: auto;
   height: 30px;
@@ -745,7 +745,7 @@ body {
   line-height: 30px;
   color: #070a22;
 }
-/* line 83, ../sass/activities.scss */
+/* line 83, ../sass/personal.scss */
 #activity_main #user .user_right a.user_fun_mine {
   width: 98px;
   height: 28px;
@@ -759,7 +759,7 @@ body {
   text-align: center;
   text-decoration: none;
 }
-/* line 96, ../sass/activities.scss */
+/* line 96, ../sass/personal.scss */
 #activity_main #user .user_right a.mail {
   width: 28px;
   height: 28px;
@@ -768,7 +768,7 @@ body {
   margin-right: 10px;
   background: url(../images/mail.png) center no-repeat;
 }
-/* line 104, ../sass/activities.scss */
+/* line 104, ../sass/personal.scss */
 #activity_main #user .user_right a.interest {
   width: 83px;
   height: 30px;
@@ -781,14 +781,14 @@ body {
   line-height: 30px;
   text-decoration: none;
 }
-/* line 117, ../sass/activities.scss */
+/* line 117, ../sass/personal.scss */
 #activity_main #user ul.user_acts {
   width: 100%;
   height: 35px;
   float: left;
   margin: 10px 0 6px;
 }
-/* line 122, ../sass/activities.scss */
+/* line 122, ../sass/personal.scss */
 #activity_main #user ul.user_acts li {
   width: auto;
   height: 35px;
@@ -800,15 +800,15 @@ body {
   border-right: #ebeae8 1px solid;
   cursor: pointer;
 }
-/* line 133, ../sass/activities.scss */
+/* line 133, ../sass/personal.scss */
 #activity_main #user ul.user_acts li.selected {
   color: #2f2e2e;
 }
-/* line 136, ../sass/activities.scss */
+/* line 136, ../sass/personal.scss */
 #activity_main #user ul.user_acts li.last {
   border-right-width: 0;
 }
-/* line 141, ../sass/activities.scss */
+/* line 141, ../sass/personal.scss */
 #activity_main .acts_main {
   width: 1002px;
   height: auto;
@@ -816,11 +816,11 @@ body {
   padding-top: 49px;
   display: none;
 }
-/* line 147, ../sass/activities.scss */
+/* line 147, ../sass/personal.scss */
 #activity_main .acts_main .m-act_out {
   margin-bottom: 20px;
 }
-/* line 149, ../sass/activities.scss */
+/* line 149, ../sass/personal.scss */
 #activity_main .acts_main .m-act_out .sign {
   width: 223px;
   height: 30px;
@@ -829,19 +829,19 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
-/* line 157, ../sass/activities.scss */
+/* line 157, ../sass/personal.scss */
 #activity_main .acts_main .m-act_out .act_week {
   background: url(../images/act_week.png) no-repeat;
 }
-/* line 160, ../sass/activities.scss */
+/* line 160, ../sass/personal.scss */
 #activity_main .acts_main .m-act_out .act_now {
   background: url(../images/act_now.png) no-repeat;
 }
-/* line 163, ../sass/activities.scss */
+/* line 163, ../sass/personal.scss */
 #activity_main .acts_main .m-act_out .act_recommend {
   background: url(../images/act_recommend.png) no-repeat;
 }
-/* line 168, ../sass/activities.scss */
+/* line 168, ../sass/personal.scss */
 #activity_main .show {
   display: block;
 }

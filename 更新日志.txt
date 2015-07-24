@@ -10,3 +10,7 @@
 
 2015-07-24-21-44
 1.增加activities页面。
+
+2015-07-24-23-21
+1.将activities页面更正为personal页面；
+2.修正return页面。
