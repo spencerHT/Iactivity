@@ -373,10 +373,10 @@ body {
 
 /* line 259, ../sass/prototype.scss */
 .g-banner {
-  height: 600px;
+  height: 100px;
   width: 100%;
   float: left;
-  background: url(../images/banner.jpg) no-repeat;
+  background: url(../images/login_banner.jpg) no-repeat;
   position: relative;
   background-size: 100%;
 }
@@ -638,44 +638,108 @@ body {
   margin-right: 50px;
 }
 
-/* line 3, ../sass/index.scss */
-#index_main {
-  margin: 0 auto;
-  width: 1000px;
-  height: auto;
+/* line 5, ../sass/login.scss */
+.login_main {
+  width: 286px;
+  height: 248px;
+  border: #dbdbd8 1px solid;
+  padding: 36px 137px;
+  margin: 100px auto;
+  background-color: white;
+  position: relative;
 }
-
-/* line 8, ../sass/index.scss */
-.m-block {
+/* line 13, ../sass/login.scss */
+.login_main #login_logo {
+  width: 100%;
+  height: 36px;
   float: left;
-  width: auto;
-  height: auto;
-  padding-top: 40px;
+  background: url(../images/login_logo.png) center no-repeat;
+  margin-bottom: 20px;
 }
-/* line 13, ../sass/index.scss */
-.m-block .block_head {
+/* line 20, ../sass/login.scss */
+.login_main .login_head {
+  width: 100%;
+  height: 17px;
+  float: left;
+  margin-bottom: 13px;
+}
+/* line 25, ../sass/login.scss */
+.login_main .login_head .lines {
+  width: 35px;
+  height: 1px;
+  float: left;
+  margin: 8px 0;
+  line-height: 1px;
+  background-color: #cbcbcb;
+}
+/* line 33, ../sass/login.scss */
+.login_main .login_head .title {
+  width: 216px;
+  height: 17px;
+  float: left;
+  font-size: 16px;
+  line-height: 17px;
+  text-align: center;
+  color: #999999;
+}
+/* line 43, ../sass/login.scss */
+.login_main input[type=text], .login_main input[type=password] {
+  width: 252px;
+  height: 34px;
+  line-height: 34px;
+  float: left;
+  margin-bottom: 9px;
+  padding: 0 16px;
+  color: #999999;
+  border: #cbcbcb 1px solid;
+}
+/* line 53, ../sass/login.scss */
+.login_main input[type=text]::-webkit-input-placeholder, .login_main input[type=password]::-webkit-input-placeholder {
+  color: #999999;
+}
+/* line 56, ../sass/login.scss */
+.login_main input[type=submit] {
+  width: 286px;
+  height: 36px;
+  background: url(../images/login_submit.jpg) repeat-x;
+  border-radius: 4px;
+  color: white;
+}
+/* line 63, ../sass/login.scss */
+.login_main a.register, .login_main a.change {
   width: 100%;
   height: auto;
   float: left;
-}
-/* line 17, ../sass/index.scss */
-.m-block .block_head .lines {
-  width: 400px;
-  height: 1px;
-  line-height: 1px;
-  float: left;
-  overflow: hidden;
-  margin: 12px 0;
-  background-color: #cbcbcb;
-}
-/* line 26, ../sass/index.scss */
-.m-block .block_head .header {
-  width: 200px;
-  height: 25px;
-  font-size: 24px;
-  float: left;
+  display: block;
   color: #999999;
-  text-align: center;
-  line-height: 25px;
-  margin-bottom: 40px;
+  font-size: 12px;
+  margin-top: 1px;
+}
+/* line 71, ../sass/login.scss */
+.login_main a.register span, .login_main a.change span {
+  color: #e8554e;
+  text-decoration: underline;
+  text-decoration-color: #e8554e;
+}
+/* line 78, ../sass/login.scss */
+.login_main a.change {
+  text-decoration: none;
+}
+/* line 80, ../sass/login.scss */
+.login_main a.change span {
+  text-decoration: none;
+}
+/* line 84, ../sass/login.scss */
+.login_main a.forget {
+  position: absolute;
+  color: #d92204;
+  font-size: 12px;
+  right: 138px;
+  bottom: 38px;
+  text-decoration: none;
+}
+
+/* line 93, ../sass/login.scss */
+.hide {
+  display: none;
 }

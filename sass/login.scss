@@ -1,0 +1,95 @@
+$banerHeight: 100px;
+$banner: url(../images/login_banner.jpg);
+@import "prototype";
+
+.login_main {
+    width: 286px;
+    height: 248px;
+    border: #dbdbd8 1px solid;
+    padding: 36px 137px;
+    margin: 100px auto;
+    background-color: white;
+    position:relative;
+    #login_logo {
+        width: 100%;
+        height: 36px;
+        float: left;
+        background: url(../images/login_logo.png) center no-repeat;
+        margin-bottom: 20px;
+    }
+    .login_head {
+        width: 100%;
+        height: 17px;
+        float: left;
+        margin-bottom: 13px;
+        .lines {
+            width: 35px;
+            height: 1px;
+            float: left;
+            margin: 8px 0;
+            line-height: 1px;
+            background-color:#cbcbcb;
+        }
+        .title {
+            width: 216px;
+            height: 17px;
+            float: left;
+            font-size: 16px;
+            line-height: 17px;
+            text-align: center;
+            color: #999999;
+        }
+    }
+    input[type=text],input[type=password] {
+        width: 252px;
+        height: 34px;
+        line-height: 34px;
+        float: left;
+        margin-bottom: 9px;
+        padding: 0 16px;
+        color: #999999;
+        border: #cbcbcb 1px solid;
+    }
+    input[type=text]::-webkit-input-placeholder,input[type=password]::-webkit-input-placeholder {
+        color: #999999;
+    }
+    input[type=submit] {
+        width: 286px;
+        height: 36px;
+        background: url(../images/login_submit.jpg) repeat-x;
+        border-radius:4px;
+        color: white;
+    }
+    a.register ,a.change {
+        width: 100%;
+        height: auto;
+        float: left;
+        display: block;
+        color: #999999;
+        font-size: 12px;
+        margin-top: 1px;
+        span {
+            color: #e8554e;
+            // border-bottom:  1px solid;
+            text-decoration: underline;
+            text-decoration-color: #e8554e;
+        }
+    }
+    a.change {
+        text-decoration: none;
+        span {
+            text-decoration: none;            
+        }
+    }
+    a.forget {
+        position: absolute;
+        color: #d92204;
+        font-size: 12px;
+        right: 138px;
+        bottom: 38px;
+        text-decoration: none;
+    }
+}
+.hide {
+    display: none;
+}

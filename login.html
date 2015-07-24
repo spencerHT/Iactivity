@@ -3,10 +3,11 @@
 <head>
     <meta name="render" content="webkit" />
     <meta charset="UTF-8" />
-    <title>prototype</title>
-    <link href="stylesheets/prototype.css" media="screen" rel="stylesheet" type="text/css" />
+    <title>登录</title>
+    <link href="stylesheets/login.css" media="screen" rel="stylesheet" type="text/css" />
     <script src="javascripts/jquery-1.7.2.min.js"></script>
     <script src="javascripts/prototype.js"></script>
+    <script src="javascripts/login.js"></script>
 </head>
 <body>
     <div class="g-header">
@@ -79,12 +80,37 @@
         <input type="submit" value=""></form>
 </div>
 <div class="g-banner">
-    <form action="#" class="search">
-        <input type="text">
-        <input type="submit" value="">
+</div>
+<div class="g-mid">
+    <form action="#" class="login_main">
+        <div id="login_logo"></div>
+        <div class="login_head">
+            <div class="lines">&nbsp;</div>
+            <div class="title">学线通行证登录·个人入口</div>
+            <div class="lines">&nbsp;</div>
+        </div>
+        <input type="text" name="user_name" placeholder="学线通行证账号">
+        <input type="password" name="user_pwd" placeholder="密码">
+        <input type="submit" value="登录">
+        <a href="javascript:void(0)" class="register">进入学线通行证<span>注册</span>>></a>
+        <a href="javascript:void(0)" class="change"><span>组织入口</span>>></a>
+        <a href="javascript:void(0)" class="forget">忘记密码>></a>
+    </form>
+    <form action="#" class="login_main hide">
+        <div id="login_logo"></div>
+        <div class="login_head">
+            <div class="lines">&nbsp;</div>
+            <div class="title">学线通行证登录·组织入口</div>
+            <div class="lines">&nbsp;</div>
+        </div>
+        <input type="text" name="org_name" placeholder="创建活动账号">
+        <input type="password" name="org_pwd" placeholder="密码">
+        <input type="submit" value="登录">
+        <a href="javascript:void(0)" class="register">创建活动账号<span>注册</span>>></a>
+        <a href="javascript:void(0)" class="change"><span>个人入口</span>>></a>
+        <a href="javascript:void(0)" class="forget">忘记密码>></a>
     </form>
 </div>
-<div class="g-mid"></div>
 <div class="g-footer">
     <div class="g-footer_main">
         <div class="g-logo_big"></div>

@@ -9,10 +9,11 @@ $banner: url(../images/sort_banner.jpg) !default;
     padding-top: 49px;
     #sort_part {
         width: 953px;
-        height: 330px;
+        height: auto;
         border: #e4e4e1 1px solid;
         background-color: white;
         margin-bottom: 44px;
+        overflow: hidden;
         float: left;
         padding: 25px 0 35px 45px;
         position: relative;
