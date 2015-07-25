@@ -13,7 +13,8 @@ $(function(){
                     $(".box_bg").show();
                     setTimeout(function(){
                         location.href = "";
-                    },3000)
+                    },3000);
+                    return false;
                 };
             }
         })
