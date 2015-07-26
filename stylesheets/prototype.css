@@ -1,8 +1,4 @@
 @charset "UTF-8";
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 /* line 5, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -23,64 +19,67 @@ time, mark, audio, video, input {
   font: inherit;
   font-size: 100%;
   vertical-align: baseline;
-  -webkit-appearance: none;
-  -moz-appearance: none;
 }
 
-/* line 23, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 21, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 input[type='submit'] {
   border: 0;
 }
 
-/* line 29, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 27, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 31, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 29, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 33, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 31, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 35, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 33, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 37, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 35, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 110, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 108, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 39, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 37, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 123, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 121, C:/Ruby193/lib/ruby/gems/1.9.1/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
-/* line 9, ../sass/prototype.scss */
+/* line 7, ../sass/prototype.scss */
+html {
+  position: relative;
+}
+
+/* line 10, ../sass/prototype.scss */
 input, textarea {
   outline: none;
 }
 
-/* line 12, ../sass/prototype.scss */
+/* line 13, ../sass/prototype.scss */
 .clearfix:after {
   display: block;
   visibility: hidden;
@@ -90,7 +89,7 @@ input, textarea {
   content: ".";
 }
 
-/* line 15, ../sass/prototype.scss */
+/* line 16, ../sass/prototype.scss */
 body {
   width: 100%;
   height: 100%;
@@ -98,7 +97,7 @@ body {
   background-color: #ededea;
 }
 
-/* line 21, ../sass/prototype.scss */
+/* line 22, ../sass/prototype.scss */
 .g-header {
   height: 50px;
   width: 100%;
@@ -108,7 +107,7 @@ body {
       g-entered是已登录样式
    */
 }
-/* line 26, ../sass/prototype.scss */
+/* line 27, ../sass/prototype.scss */
 .g-header .g-logo {
   height: 29px;
   width: 97px;
@@ -116,7 +115,7 @@ body {
   margin-left: 41px;
   margin-top: 12px;
 }
-/* line 33, ../sass/prototype.scss */
+/* line 34, ../sass/prototype.scss */
 .g-header ul.g-left_list {
   height: 18px;
   width: auto;
@@ -124,28 +123,28 @@ body {
   float: left;
   margin-top: 12px;
 }
-/* line 39, ../sass/prototype.scss */
+/* line 40, ../sass/prototype.scss */
 .g-header ul.g-left_list li.g-left_list_li {
   height: 100%;
   float: left;
   width: 32px;
   margin-left: 23px;
 }
-/* line 44, ../sass/prototype.scss */
+/* line 45, ../sass/prototype.scss */
 .g-header ul.g-left_list li.g-left_list_li a {
   width: 100%;
   height: 100%;
   float: left;
   display: block;
 }
-/* line 50, ../sass/prototype.scss */
+/* line 51, ../sass/prototype.scss */
 .g-header ul.g-left_list li.g-left_list_li div.dots {
   position: relative;
   width: 100%;
   height: 100%;
   cursor: pointer;
 }
-/* line 55, ../sass/prototype.scss */
+/* line 56, ../sass/prototype.scss */
 .g-header ul.g-left_list li.g-left_list_li div.dots .triangle_top {
   width: 0;
   height: 0;
@@ -157,7 +156,7 @@ body {
   border-bottom: 14px white solid;
   display: none;
 }
-/* line 67, ../sass/prototype.scss */
+/* line 68, ../sass/prototype.scss */
 .g-header ul.g-left_list li.g-left_list_li ul.dots_ul {
   width: 180px;
   height: 20px;
@@ -170,7 +169,7 @@ body {
   display: none;
   z-index: 3;
 }
-/* line 78, ../sass/prototype.scss */
+/* line 79, ../sass/prototype.scss */
 .g-header ul.g-left_list li.g-left_list_li ul.dots_ul li, .g-header ul.g-left_list li.g-left_list_li ul.dots_ul span {
   width: auto;
   height: auto;
@@ -178,7 +177,7 @@ body {
   color: #999999;
   cursor: pointer;
 }
-/* line 85, ../sass/prototype.scss */
+/* line 86, ../sass/prototype.scss */
 .g-header ul.g-left_list li.g-left_list_li ul.dots_ul li a {
   width: auto;
   height: auto;
@@ -188,56 +187,56 @@ body {
   font-size: 16px;
   line-height: 20px;
 }
-/* line 94, ../sass/prototype.scss */
+/* line 95, ../sass/prototype.scss */
 .g-header ul.g-left_list li.g-left_list_li ul.dots_ul li a:hover {
   text-decoration: underline;
 }
-/* line 99, ../sass/prototype.scss */
+/* line 100, ../sass/prototype.scss */
 .g-header ul.g-left_list li.g-block1 {
   background: url(../images/g-banner1.png) no-repeat;
 }
-/* line 102, ../sass/prototype.scss */
+/* line 103, ../sass/prototype.scss */
 .g-header ul.g-left_list li.g-block2 {
   background: url(../images/g-banner2.png) no-repeat;
 }
-/* line 105, ../sass/prototype.scss */
+/* line 106, ../sass/prototype.scss */
 .g-header ul.g-left_list li.g-block3 {
   width: 64px;
   background: url(../images/g-banner3.png) no-repeat;
 }
-/* line 109, ../sass/prototype.scss */
+/* line 110, ../sass/prototype.scss */
 .g-header ul.g-left_list li.g-block4 {
   width: 20px;
   background: url(../images/g-banner4.png) center no-repeat;
   position: relative;
 }
-/* line 114, ../sass/prototype.scss */
+/* line 115, ../sass/prototype.scss */
 .g-header ul.g-left_list li.g-block1:hover {
   background: url(../images/g-banner1_.png) no-repeat;
 }
-/* line 117, ../sass/prototype.scss */
+/* line 118, ../sass/prototype.scss */
 .g-header ul.g-left_list li.g-block2:hover {
   background: url(../images/g-banner2_.png) no-repeat;
 }
-/* line 120, ../sass/prototype.scss */
+/* line 121, ../sass/prototype.scss */
 .g-header ul.g-left_list li.g-block3:hover {
   width: 64px;
   background: url(../images/g-banner3_.png) no-repeat;
 }
-/* line 124, ../sass/prototype.scss */
+/* line 125, ../sass/prototype.scss */
 .g-header ul.g-left_list li.g-block1_ {
   background: url(../images/g-banner1_.png) no-repeat;
 }
-/* line 127, ../sass/prototype.scss */
+/* line 128, ../sass/prototype.scss */
 .g-header ul.g-left_list li.g-block2_ {
   background: url(../images/g-banner2_.png) no-repeat;
 }
-/* line 130, ../sass/prototype.scss */
+/* line 131, ../sass/prototype.scss */
 .g-header ul.g-left_list li.g-block3_ {
   width: 64px;
   background: url(../images/g-banner3_.png) no-repeat;
 }
-/* line 138, ../sass/prototype.scss */
+/* line 139, ../sass/prototype.scss */
 .g-header .g-enter {
   height: 15px;
   width: 63px;
@@ -246,7 +245,7 @@ body {
   color: black;
   text-decoration: none;
 }
-/* line 146, ../sass/prototype.scss */
+/* line 147, ../sass/prototype.scss */
 .g-header .g-entered {
   width: 149px;
   height: 100%;
@@ -256,7 +255,7 @@ body {
   border: #cbcbcb 1px solid;
   border-width: 0 1px;
 }
-/* line 154, ../sass/prototype.scss */
+/* line 155, ../sass/prototype.scss */
 .g-header .g-entered .triangle {
   width: 0;
   height: 0;
@@ -266,14 +265,14 @@ body {
   right: 0;
   bottom: 0;
 }
-/* line 163, ../sass/prototype.scss */
+/* line 164, ../sass/prototype.scss */
 .g-header .g-entered .person_head {
   width: 29px;
   height: 29px;
   float: left;
   margin: 12px 0 0 24px;
 }
-/* line 169, ../sass/prototype.scss */
+/* line 170, ../sass/prototype.scss */
 .g-header .g-entered .person_name {
   width: auto;
   height: 29px;
@@ -284,7 +283,7 @@ body {
   color: #070a22;
   cursor: pointer;
 }
-/* line 179, ../sass/prototype.scss */
+/* line 180, ../sass/prototype.scss */
 .g-header .g-entered ul.g-right_list {
   width: 100%;
   height: 0;
@@ -295,57 +294,57 @@ body {
   background-color: white;
   z-index: 3;
 }
-/* line 188, ../sass/prototype.scss */
+/* line 189, ../sass/prototype.scss */
 .g-header .g-entered ul.g-right_list li {
   width: 100%;
   height: 39px;
   float: left;
 }
-/* line 192, ../sass/prototype.scss */
+/* line 193, ../sass/prototype.scss */
 .g-header .g-entered ul.g-right_list li div {
   float: left;
   display: block;
   background-color: white;
   margin: 7px 0 0 24px;
 }
-/* line 198, ../sass/prototype.scss */
+/* line 199, ../sass/prototype.scss */
 .g-header .g-entered ul.g-right_list li a {
   width: 100%;
   height: 100%;
   float: left;
   display: block;
 }
-/* line 204, ../sass/prototype.scss */
+/* line 205, ../sass/prototype.scss */
 .g-header .g-entered ul.g-right_list li a:hover {
   background-color: #e0e0e0;
 }
-/* line 207, ../sass/prototype.scss */
+/* line 208, ../sass/prototype.scss */
 .g-header .g-entered ul.g-right_list li .icon1 {
   width: 27px;
   height: 25px;
   background: url(../images/right-list1.png) no-repeat;
 }
-/* line 212, ../sass/prototype.scss */
+/* line 213, ../sass/prototype.scss */
 .g-header .g-entered ul.g-right_list li .icon2 {
   width: 27px;
   height: 18px;
   margin-top: 10px;
   background: url(../images/right-list2.png) no-repeat;
 }
-/* line 218, ../sass/prototype.scss */
+/* line 219, ../sass/prototype.scss */
 .g-header .g-entered ul.g-right_list li .icon3 {
   width: 27px;
   height: 28px;
   margin-top: 5px;
   background: url(../images/right-list3.png) no-repeat;
 }
-/* line 224, ../sass/prototype.scss */
+/* line 225, ../sass/prototype.scss */
 .g-header .g-entered ul.g-right_list li .icon4 {
   width: 27px;
   height: 22px;
   background: url(../images/right-list4.png) no-repeat;
 }
-/* line 229, ../sass/prototype.scss */
+/* line 230, ../sass/prototype.scss */
 .g-header .g-entered ul.g-right_list li p {
   width: auto;
   height: 100%;
@@ -355,14 +354,14 @@ body {
   line-height: 39px;
   margin-left: 20px;
 }
-/* line 242, ../sass/prototype.scss */
+/* line 243, ../sass/prototype.scss */
 .g-header .g-search {
   width: 446px;
   height: 35px;
   float: right;
   margin: 8px 14px 0 0;
 }
-/* line 247, ../sass/prototype.scss */
+/* line 248, ../sass/prototype.scss */
 .g-header .g-search input[type=text] {
   width: 388px;
   height: 33px;
@@ -373,7 +372,7 @@ body {
   color: black;
   background-color: #f7f4f4;
 }
-/* line 257, ../sass/prototype.scss */
+/* line 258, ../sass/prototype.scss */
 .g-header .g-search input[type=submit] {
   width: 33px;
   height: 33px;
@@ -385,7 +384,7 @@ body {
   background-size: 100%;
 }
 
-/* line 270, ../sass/prototype.scss */
+/* line 271, ../sass/prototype.scss */
 .g-banner {
   height: 600px;
   width: 100%;
@@ -394,7 +393,7 @@ body {
   position: relative;
   background-size: 100%;
 }
-/* line 277, ../sass/prototype.scss */
+/* line 278, ../sass/prototype.scss */
 .g-banner .search {
   width: 800px;
   height: 57px;
@@ -403,7 +402,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-/* line 284, ../sass/prototype.scss */
+/* line 285, ../sass/prototype.scss */
 .g-banner .search input[type=text] {
   width: 706px;
   height: 55px;
@@ -414,7 +413,7 @@ body {
   background-color: rgba(255, 255, 255, 0.2);
   color: black;
 }
-/* line 294, ../sass/prototype.scss */
+/* line 295, ../sass/prototype.scss */
 .g-banner .search input[type=submit] {
   width: 53px;
   height: 52px;
@@ -425,7 +424,7 @@ body {
   cursor: pointer;
 }
 
-/* line 305, ../sass/prototype.scss */
+/* line 306, ../sass/prototype.scss */
 .g-mid {
   height: auto;
   width: 100%;
@@ -433,7 +432,7 @@ body {
   position: relative;
 }
 
-/* line 311, ../sass/prototype.scss */
+/* line 312, ../sass/prototype.scss */
 .g-footer {
   height: 224px;
   width: 100%;
@@ -441,14 +440,14 @@ body {
   background: url(../images/footer.png) repeat;
   border-top: #cbcbcb 1px solid;
 }
-/* line 317, ../sass/prototype.scss */
+/* line 318, ../sass/prototype.scss */
 .g-footer .g-footer_main {
   width: 1000px;
   height: 83px;
   padding: 70px 0;
   margin: 0 auto;
 }
-/* line 322, ../sass/prototype.scss */
+/* line 323, ../sass/prototype.scss */
 .g-footer .g-footer_main .g-logo_big {
   width: 201px;
   height: 83px;
@@ -456,14 +455,14 @@ body {
   background: url(../images/logo_big.png) no-repeat;
   margin-right: 25px;
 }
-/* line 329, ../sass/prototype.scss */
+/* line 330, ../sass/prototype.scss */
 .g-footer .g-footer_main ul.g-footer_links {
   height: 100%;
   width: 336px;
   float: left;
   margin-right: 16px;
 }
-/* line 334, ../sass/prototype.scss */
+/* line 335, ../sass/prototype.scss */
 .g-footer .g-footer_main ul.g-footer_links li {
   width: auto;
   height: 30px;
@@ -473,7 +472,7 @@ body {
   font-weight: 900;
   margin-right: 30px;
 }
-/* line 342, ../sass/prototype.scss */
+/* line 343, ../sass/prototype.scss */
 .g-footer .g-footer_main ul.g-footer_links li a {
   display: block;
   width: 100%;
@@ -481,7 +480,7 @@ body {
   color: #070a22;
   text-decoration: none;
 }
-/* line 350, ../sass/prototype.scss */
+/* line 351, ../sass/prototype.scss */
 .g-footer .g-footer_main ul.g-footer_links li.link_head {
   height: 28px;
   width: 100%;
@@ -489,14 +488,14 @@ body {
   font-size: 18px;
   line-height: 28px;
 }
-/* line 358, ../sass/prototype.scss */
+/* line 359, ../sass/prototype.scss */
 .g-footer .g-footer_main .g-footer_copy {
   height: 53px;
   width: 414px;
   padding-top: 28px;
   float: right;
 }
-/* line 364, ../sass/prototype.scss */
+/* line 365, ../sass/prototype.scss */
 .g-footer .g-footer_main .g-footer_copy ul.footer_list li, .g-footer .g-footer_main .g-footer_copy ul.footer_list span {
   width: auto;
   height: auto;
@@ -505,7 +504,7 @@ body {
   cursor: pointer;
   font-weight: 900;
 }
-/* line 372, ../sass/prototype.scss */
+/* line 373, ../sass/prototype.scss */
 .g-footer .g-footer_main .g-footer_copy ul.footer_list li a {
   width: auto;
   height: auto;
@@ -515,19 +514,19 @@ body {
   font-size: 16px;
   line-height: 22px;
 }
-/* line 382, ../sass/prototype.scss */
+/* line 383, ../sass/prototype.scss */
 .g-footer .g-footer_main .g-footer_copy p {
   width: 100%;
   float: left;
   font-weight: 900;
   color: #070a22;
 }
-/* line 388, ../sass/prototype.scss */
+/* line 389, ../sass/prototype.scss */
 .g-footer .g-footer_main .g-footer_copy p:first-child {
   line-height: 22px;
 }
 
-/* line 394, ../sass/prototype.scss */
+/* line 395, ../sass/prototype.scss */
 .m-act_out {
   width: 300px;
   height: 380px;
@@ -535,7 +534,7 @@ body {
   position: relative;
   margin-bottom: 5px;
 }
-/* line 400, ../sass/prototype.scss */
+/* line 401, ../sass/prototype.scss */
 .m-act_out .m-act {
   width: 298px;
   height: 348px;
@@ -545,13 +544,13 @@ body {
   position: relative;
   overflow: hidden;
 }
-/* line 408, ../sass/prototype.scss */
+/* line 409, ../sass/prototype.scss */
 .m-act_out .m-act .act_img {
   width: 298px;
   height: 200px;
   float: left;
 }
-/* line 413, ../sass/prototype.scss */
+/* line 414, ../sass/prototype.scss */
 .m-act_out .m-act .act_summry {
   width: 218px;
   height: 75px;
@@ -562,7 +561,7 @@ body {
   font-weight: 600;
   cursor: pointer;
 }
-/* line 423, ../sass/prototype.scss */
+/* line 424, ../sass/prototype.scss */
 .m-act_out .m-act .act_footer {
   width: 100%;
   height: 32px;
@@ -571,29 +570,29 @@ body {
   padding: 0 40px;
   box-sizing: border-box;
 }
-/* line 430, ../sass/prototype.scss */
+/* line 431, ../sass/prototype.scss */
 .m-act_out .m-act .act_footer p {
   width: auto;
   height: 100%;
   color: #999999;
   cursor: pointer;
 }
-/* line 435, ../sass/prototype.scss */
+/* line 436, ../sass/prototype.scss */
 .m-act_out .m-act .act_footer p span {
   float: right;
   font-size: 12px;
   line-height: 20px;
   padding-left: 10px;
 }
-/* line 442, ../sass/prototype.scss */
+/* line 443, ../sass/prototype.scss */
 .m-act_out .m-act .act_footer .clock {
   float: left;
 }
-/* line 445, ../sass/prototype.scss */
+/* line 446, ../sass/prototype.scss */
 .m-act_out .m-act .act_footer .pin {
   float: right;
 }
-/* line 449, ../sass/prototype.scss */
+/* line 450, ../sass/prototype.scss */
 .m-act_out .m-act .summry_more {
   width: 298px;
   height: 348px;
@@ -604,7 +603,7 @@ body {
   z-index: 2;
   display: none;
 }
-/* line 458, ../sass/prototype.scss */
+/* line 459, ../sass/prototype.scss */
 .m-act_out .m-act .summry_more .triangle_top {
   width: 0;
   height: 0;
@@ -616,7 +615,7 @@ body {
   border-right: 5px solid transparent;
   border-bottom: 10px #e8554e solid;
 }
-/* line 469, ../sass/prototype.scss */
+/* line 470, ../sass/prototype.scss */
 .m-act_out .m-act .summry_more .summry_text {
   margin: 49px 24px;
   width: 250px;
@@ -628,7 +627,7 @@ body {
   font-weight: 900px;
   overflow: hidden;
 }
-/* line 482, ../sass/prototype.scss */
+/* line 483, ../sass/prototype.scss */
 .m-act_out .down_ {
   width: 298px;
   height: 30px;
@@ -643,21 +642,21 @@ body {
   left: 1px;
   display: none;
 }
-/* line 496, ../sass/prototype.scss */
+/* line 497, ../sass/prototype.scss */
 .m-act_out .z-select {
   box-shadow: -10px 0 10px #d5d5d2, 10px 0 10px #d5d5d2, 0 -10px 10px #d5d5d2, 0 10px 10px #d5d5d2;
 }
 
-/* line 500, ../sass/prototype.scss */
+/* line 501, ../sass/prototype.scss */
 .m-act_1 {
   margin-right: 50px;
 }
 
-/* line 504, ../sass/prototype.scss */
+/* line 505, ../sass/prototype.scss */
 .box_bg {
   width: 100%;
   height: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
@@ -666,7 +665,7 @@ body {
   background-color: rgba(255, 255, 255, 0.85);
   display: none;
 }
-/* line 515, ../sass/prototype.scss */
+/* line 516, ../sass/prototype.scss */
 .box_bg .return {
   width: 500px;
   height: 135px;
@@ -680,25 +679,25 @@ body {
   background-color: white;
   text-align: center;
 }
-/* line 527, ../sass/prototype.scss */
+/* line 528, ../sass/prototype.scss */
 .box_bg .return .return_logo {
   background: url(../images/login_logo.png) center no-repeat;
   width: 100%;
   height: 36px;
   margin-bottom: 20px;
 }
-/* line 533, ../sass/prototype.scss */
+/* line 534, ../sass/prototype.scss */
 .box_bg .return p {
   font-size: 16px;
   color: #070a22;
   margin-bottom: 20px;
 }
-/* line 539, ../sass/prototype.scss */
+/* line 540, ../sass/prototype.scss */
 .box_bg .return p.sign {
   color: #e8554e;
   margin-bottom: 5px;
 }
-/* line 543, ../sass/prototype.scss */
+/* line 544, ../sass/prototype.scss */
 .box_bg .return a {
   width: 100%;
   height: auto;

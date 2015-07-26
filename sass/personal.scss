@@ -59,7 +59,7 @@ $banner: none;
                     }
                     p.number {
                         font-weight: 900;
-                        color: #070a22;
+                        color: $font_color;
                     }
                 }
                 .border-right {
@@ -78,7 +78,7 @@ $banner: none;
                 float: left;
                 font-size: 24px;
                 line-height: 30px;
-                color: #070a22;
+                color: $font_color;
             }
             a.user_fun_mine {
                 width: 98px;

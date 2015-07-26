@@ -163,13 +163,13 @@ $(function(){
 
     $("#org_register").submit(function(){
         var false_n = 0;
+
         for (var i = 0; i < $(".true").length; i++){
             if ($(".true").eq(i).css("display") != "block") {
                 false_n++;
                 show_false($(".true").eq(i),"请填写！");
             }
         }
-                        $(".box_bg").show();
         if (!false_n) {
             var formData = new FormData($("#org_register")[0]);
             $.ajax({

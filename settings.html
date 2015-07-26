@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta name="render" content="webkit" />
+    <meta charset="UTF-8" />
+    <title>个人页</title>
+    <link href="stylesheets/settings.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="javascripts/jquery-1.7.2.min.js"></script>
+    <script src="javascripts/prototype.js"></script>
+    <script src="javascripts/settings.js"></script>
+</head>
+<body>
+    <div class="g-header">
+        <img src="images/logo.png" alt="logo" class="g-logo">
+        <ul class="g-left_list">
+            <li class="g-left_list_li g-block1">
+                <a href="javascript:void(0)"></a>
+            </li>
+            <li class="g-left_list_li g-block2">
+                <a href="javascript:void(0)"></a>
+            </li>
+            <li class="g-left_list_li g-block3">
+                <a href="javascript:void(0)"></a>
+            </li>
+            <li class="g-left_list_li g-block4">
+                <div class="dots">
+                    <div class="triangle_top"></div>
+                    <ul class="dots_ul">
+                        <li>
+                            <a href="javascripti:void(0)">新手帮助</a>
+                        </li>
+                        <span>&nbsp;&middot;&nbsp;</span>
+                        <li>
+                            <a href="javascripti:void(0)">反馈</a>
+                        </li>
+                        <span>&nbsp;&middot;&nbsp;</span>
+                        <li>
+                            <a href="javascripti:void(0)">关于我们</a>
+                        </li>
+                    </ul>    
+                </div>
+
+            </li>
+        </ul>
+        <!-- <a href="javascript:void(0)" class="g-enter">登录/注册</a>
+    -->
+    <div class="g-entered">
+        <div class="triangle"></div>
+        <img src="images/person_head.jpg" alt="用户头像" class="person_head">
+        <p class="person_name">cyeah~</p>
+        <ul class="g-right_list">
+            <li>
+                <a href="javacript:void(0)">
+                    <div class="icon1"></div>
+                    <p>我的缤纷</p>
+                </a>
+            </li>
+            <li>
+                <a href="javacript:void(0)">
+                    <div class="icon2"></div>
+                    <p>私信</p>
+                </a>
+            </li>
+            <li>
+                <a href="javacript:void(0)">
+                    <div class="icon3"></div>
+                    <p>账号设置</p>
+                </a>
+            </li>
+            <li>
+                <a href="javacript:void(0)">
+                    <div class="icon4"></div>
+                    <p>退出账号</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <form action="#" class="g-search">
+        <input type="text">
+        <input type="submit" value=""></form>
+</div>
+<div class="g-mid clearfix">
+    <div id="user_main">
+        <div id="user">
+            <div class="img_top"></div>
+            <img src="images/default_header.jpg" alt="用户头像" class="user_head">
+            <p class="user_name">c.yeah~哈哈哈我就是觉得她和我一样是长脸hhh</p>
+            <p class="settings_title">账号设置</p>
+            <div id="basic_info">
+                <form class="lines" action="#" id="name">
+                    <label for="user_name">昵称</label>
+                    <input type="text" id="user_name" class="name">
+                </form>
+                <form class="lines" action="#" id="head_pic">
+                    <label for="user_head">头像</label>
+                    <div class="preview">
+                        <img src="images/default_header.jpg">
+                    </div>
+                    <button class="upload">上传头像</button>
+                    <img src="" id="tempimg" style="display:none">
+                    <input type="file" id="user_head">
+                    <input type="submit" class="submit_s" value="保存" form="name">
+                    <div class="img_manage">
+                        <div class="img_wrap">
+                            <img src="" alt="" id="big_img">
+                            <div class="main"></div>
+                            <div class="top"></div>
+                            <div class="right"></div>
+                            <div class="bottom"></div>
+                            <div class="left"></div>  
+                        </div>
+                    </div>
+                    <p class="base false"></p>
+                </form>
+            </div>
+            <div id="resume">
+                <p class="title">个人简历</p>
+                <form action="#" class="resume_form">
+                    <div class="one_inch">
+                        <img src="images/one_inch.jpg" alt="">
+                        <label for="one_inch">上传一寸照片</label>
+                        <input type="file" id="one_inch">
+                    </div>
+                    <div class="lines">
+                        <label for="user_name" class="left">姓名</label>
+                        <input type="text" id="user_name" value="xucy" readonly="readonly">
+                    </div>
+                    <div class="lines">
+                        <p class="left">性别</p>
+                        <label for="male" class="right"><input type="radio" id="male" name="sex">男</label>
+                        <label for="female" class="right"><input type="radio" id="female" name="sex">女</label>
+                    </div>
+                    <div class="lines">
+                        <label for="sduId" class="left">学号</label>
+                        <input type="text" id="sduId" value="121313" readonly="readonly">
+                    </div>
+                    <div class="lines">
+                        <label for="college" class="left">学院</label>
+                        <input type="text" id="college">
+                    </div>
+                    <div class="lines">
+                        <label for="grade" class="left">年级</label>
+                        <input type="text" id="grade" readonly="readonly">
+                    </div>
+                    <div class="lines">
+                        <label for="campus" class="left">校区</label>
+                        <input type="text" id="campus">
+                    </div>
+                    <div class="lines">
+                        <label for="phone" class="left">手机</label>
+                        <input type="text" id="phone">
+                    </div>
+                    <div class="lines">
+                        <label for="email" class="left">邮箱</label>
+                        <input type="text" id="email">
+                    </div>
+                    <input type="submit" value="保存">
+                </form>
+            </div>
+            <div id="passport">
+                <p class="left">学线通行证</p>
+                <a href="javascript:void(0)" class="right">点击前往 >></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="g-footer">
+    <div class="g-footer_main">
+        <div class="g-logo_big"></div>
+        <ul class="g-footer_links">
+            <li class="link_head">友情链接</li>
+            <li><a href="https://www.online.sdu.edu.cn/">学生在线</a></li>
+            <li><a href="javascript:void(0)">找队友</a></li>
+            <li><a href="javascript:void(0)">山大百科</a></li>
+        </ul>
+        <div class="g-footer_copy">
+            <ul class="footer_list">
+                <li><a href="javasript:void(0)">新手上路</a></li>
+                <span>&nbsp;&middot;&nbsp;</span>
+                <li><a href="javasript:void(0)">反馈</a></li>
+                <span>&nbsp;&middot;&nbsp;</span>
+                <li><a href="javasript:void(0)">关于缤纷</a></li>
+            </ul>
+            <p>Copyright © 2000-2015 www.online.sdu.edu.cn All Rights Reserved.</p>
+            <p>鲁ICP备030304号 SDU ICP 0009号</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,323 @@
+$banerHeight: 0;
+$banner: none;
+@import "prototype";
+.g-mid {
+    margin-bottom: 50px;
+}
+#user_main {
+    width: 1002px;
+    height: auto;
+    margin: 81px auto 0;
+    position: relative;
+    #user {
+        width: 1000px;
+        height: auto;
+        float: left;
+        background-color: white;
+        border: #e3e2e0 1px solid;
+        padding-bottom: 30px;
+        .img_top {
+            width: 149px;
+            height: 38px;
+            position: absolute;
+            left: 14px;
+            top: -38px;
+            border: #e3e2e0 1px solid;
+            border-bottom-width:0;
+            border-top-left-radius:3px;
+            border-top-right-radius:3px;
+            background-color: white;
+            z-index: 2;
+        }
+        img.user_head {
+            width: 139px;
+            height: 139px;
+            position: absolute;
+            left: 20px;
+            top: -33px;
+            z-index: 3;
+        }
+        .user_name {
+            width: auto;
+            height: 30px;
+            float: left;
+            font-size: 24px;
+            margin: 32px 0 0 184px;
+            line-height: 30px;
+            color: $font_color;
+        }
+        .settings_title {
+            float: left;
+            width: 100%;
+            height: 30px;
+            box-sizing:border-box;
+            margin-top: 90px;
+            padding-left:50px;
+            font-size: 18px;
+            line-height: 30px;
+            color: $font_color;
+            border-bottom: #ecebe9 1px solid;
+        }
+        #basic_info , #basic_info_org {
+            width: 880px;
+            height: auto;
+            float: left;
+            margin: 0 60px;
+            border-bottom: #ecebe9 1px dotted;
+            overflow: hidden;
+            .bor_b {
+                border-bottom: #ecebe9 1px dotted;
+            }
+            input.org_submit {
+                width: 116px;
+                height: 36px;
+                background: url(../images/login_submit.jpg) repeat-x;
+                float: left;
+                font-size: 16px;
+                color: white;
+                margin: 30px 382px 0;
+            }
+            .lines {
+                width: 100%;
+                height: auto;
+                float: left;
+                padding: 10px 0 17px;
+                label {
+                    width: 150px;
+                    height: 36px;
+                    float: left;
+                    padding-left: 16px;
+                    font-size: 16px;
+                    line-height: 36px;
+                    color: $font_color;
+                }
+                input[type=text] {
+                    width: 180px;
+                    height: 34px;
+                    border: #cbcbcb 1px solid;
+                    float: left;
+                    font-size: 14px;
+                    padding: 0 9px;
+                    color: #999999;
+                    background-color: #f7f4f4;
+                }
+                .preview {
+                    width: 40px;
+                    height: 40px;
+                    float: left;
+                    overflow: hidden;
+                    position:relative;
+                    img {
+                        position:absolute;
+                    }
+                }
+                button.upload {
+                    width: 98px;
+                    height: 28px;
+                    float: left;
+                    font-size: 14px;
+                    border: #cbcbcb 1px solid;
+                    color: #999999;
+                    background-color: #f7f4f4;
+                    text-align: center;
+                    margin: 3px 353px 3px 20px;
+                }
+                input.submit_s {
+                    width: 74px;
+                    height: 31px;
+                    float: right;
+                    font-size: 16px;
+                    margin: 3px 129px 3px 0;
+                    background: url(../images/submit_s.jpg) repeat-x;
+                    color: white;
+                }
+                input[type=file] {
+                    display: none;
+                }
+                div.img_manage {
+                    width: 100%;
+                    height: auto;
+                    float: left;
+                    margin-top: 10px;
+                    box-sizing:border-box;
+                    padding-left: 166px;
+                    display: none;
+                    .img_wrap {
+                        width: auto;
+                        height: auto;
+                        float: left;
+                        position:relative;
+                        #big_img {
+                            float: left;
+                        }
+                        .main {
+                            position:absolute;
+                            background:transparent;
+                            top: 0;
+                            left: 0;
+                            cursor: move;
+                            z-index: 2;
+                        }
+                        .top, .right, .bottom, .left {
+                            position:absolute;
+                            z-index: 2;
+                            background-color: rgba(0,0,0,0.15);
+                        }
+                        .top { 
+                            top: 0;
+                            left: 0;
+                        }    
+                        .right {
+                            top: 0;
+                            right: 0;
+                        }    
+                        .bottom {
+                            bottom: 0;
+                            left: 0;
+                        }    
+                        .left {
+                            top: 0;
+                            left: 0;
+                        }    
+                    }
+                }
+                p.base {
+                    width: auto;
+                    height: 30px;
+                    float: left;
+                    font-size: 14px;
+                    line-height: 30px;
+                    padding-left:20px;
+                    margin: 3px 0 3px 12px; 
+                    display: none;
+                }
+                p.false {
+                    color: #e60012;
+                    background: url(../images/false.png) left center no-repeat;
+                }
+            }
+        }
+        #basic_info_org {
+            border-bottom: 0;
+        }
+        #resume {
+            width: 880px;
+            height: auto;
+            box-sizing: border-box;
+            margin:0 60px;
+            border-bottom: #ecebe9 1px dotted;
+            float: left;
+            p.title {
+                width: 100%;
+                height: 40px;
+                float: left;
+                box-sizing:border-box;
+                padding-left:16px;
+                color: $font_color;
+                font-size: 16px;
+                line-height: 40px;
+            }
+            .resume_form {
+                width: 660px;
+                height: 434px;
+                float: left;
+                padding: 29px 110px 10px;
+                
+                div.one_inch {
+                    width: 110px;
+                    height: auto;
+                    float: right;
+                    img {
+                        float: right;
+                        width: 110px;
+                        height: 163px;
+                    }
+                    label {
+                        width: 110px;
+                        height: 28px;
+                        float: left;
+                        border: #cbcbcb 1px solid;
+                        text-align: center;
+                        font-size: 14px;
+                        line-height: 28px;
+                        color: #999999;
+                        background-color: #f7f4f4;
+                        margin-top: 10px;
+                    }
+                    input[type=file] {
+                        display: none;
+                    }
+                }
+                .lines {
+                    width: 544px;
+                    height: 36px;
+                    float: left;
+                    margin-bottom: 10px;
+                    .left {
+                        width: 58px;
+                        height: 36px;
+                        float: left;
+                        font-size: 16px;
+                        line-height: 36px;
+                        color: $font_color;
+                    }
+                    label.right {
+                        float: left;
+                        margin: 0 30px;
+                        height: 36px;
+                        font-size: 16px;
+                        line-height: 36px;     
+                        color: #999999;
+                        input {
+                            margin-right: 10px;
+                        }
+                    }
+                    input[type=text] {
+                        width: 178px;
+                        height: 34px;
+                        padding: 0 10px;
+                        float: left;
+                        border: #cbcbcb 1px solid;
+                        color: #999999;
+                        background-color: #f7f4f4;
+                    }
+                }
+                input[type=submit] {
+                    width: 116px;
+                    height: 36px;
+                    background: url(../images/login_submit.jpg) repeat-x;
+                    float: left;
+                    font-size: 16px;
+                    color: white;
+                    margin: 30px 272px 0;
+                }
+            }
+        }
+        #passport {
+            width: 880px;
+            height: 69px;
+            margin: 0 60px;
+            float: left;
+            border-bottom: #ecebe9 1px dotted;
+            p.left {
+                width: 110px;
+                height: 69px;
+                float: left;
+                text-align: center;
+                font-size: 16px;
+                line-height: 69px;
+                color: $font_color;
+            }
+            a.right {
+                width: auto;
+                height: 69px;
+                display: block;
+                float: left;
+                font-size: 16px;
+                line-height: 69px;
+                color: #999999;
+                text-decoration: none;
+            }
+        }
+    }
+}

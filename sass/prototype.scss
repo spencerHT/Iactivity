@@ -1,11 +1,12 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
 
 @import "compass/reset";
 $banerHeight: 600px !default;
 $banner: url(../images/banner.jpg) !default;
+$font_color:#070a22;
+html {
+    position:relative;
+}
 input,textarea {
     outline: none;
 }
@@ -504,7 +505,7 @@ body{
 .box_bg {
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     bottom: 0;

@@ -1,9 +1,7 @@
 $banerHeight: 100px;
 $banner: url(../images/return_banner.jpg) !default;
 @import "prototype";
-html {
-    position:relative;
-}
+
 #return_main {
     margin:0 auto;
     width: 926px;

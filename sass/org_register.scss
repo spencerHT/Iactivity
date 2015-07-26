@@ -21,7 +21,7 @@ $banner: url(../images/org_banner.jpg);
             margin-right: 12px;
             font-size: 16px;
             line-height: 30px;
-            color: #070a22;
+            color: $font_color;
             text-align: end;
             font-weight: 900;
         }
@@ -58,10 +58,10 @@ $banner: url(../images/org_banner.jpg);
         }
         p.base {
             width: auto;
-            height: 30px;
+            height: 36px;
             float: left;
             font-size: 14px;
-            line-height: 30px;
+            line-height: 36px;
             padding-left:20px;
             margin-left: 12px; 
             display: none;

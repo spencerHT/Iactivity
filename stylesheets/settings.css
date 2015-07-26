@@ -386,10 +386,10 @@ body {
 
 /* line 271, ../sass/prototype.scss */
 .g-banner {
-  height: 100px;
+  height: 0;
   width: 100%;
   float: left;
-  background: url(../images/org_banner.jpg) no-repeat;
+  background: none no-repeat;
   position: relative;
   background-size: 100%;
 }
@@ -707,98 +707,369 @@ body {
   text-decoration: none;
 }
 
-/* line 5, ../sass/org_register.scss */
-#org_register {
-  width: 770px;
-  height: 426px;
-  margin: 45px auto 49px;
-  border: #e4e4e1 1px solid;
+/* line 4, ../sass/settings.scss */
+.g-mid {
+  margin-bottom: 50px;
+}
+
+/* line 7, ../sass/settings.scss */
+#user_main {
+  width: 1002px;
+  height: auto;
+  margin: 81px auto 0;
+  position: relative;
+}
+/* line 12, ../sass/settings.scss */
+#user_main #user {
+  width: 1000px;
+  height: auto;
+  float: left;
   background-color: white;
-  padding: 37px 115px;
+  border: #e3e2e0 1px solid;
+  padding-bottom: 30px;
 }
-/* line 12, ../sass/org_register.scss */
-#org_register .lines {
-  width: 100%;
+/* line 19, ../sass/settings.scss */
+#user_main #user .img_top {
+  width: 149px;
+  height: 38px;
+  position: absolute;
+  left: 14px;
+  top: -38px;
+  border: #e3e2e0 1px solid;
+  border-bottom-width: 0;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  background-color: white;
+  z-index: 2;
+}
+/* line 32, ../sass/settings.scss */
+#user_main #user img.user_head {
+  width: 139px;
+  height: 139px;
+  position: absolute;
+  left: 20px;
+  top: -33px;
+  z-index: 3;
+}
+/* line 40, ../sass/settings.scss */
+#user_main #user .user_name {
+  width: auto;
   height: 30px;
   float: left;
-  padding-top: 14px;
-}
-/* line 17, ../sass/org_register.scss */
-#org_register .lines label {
-  width: 90px;
-  height: 30px;
-  float: left;
-  margin-right: 12px;
-  font-size: 16px;
+  font-size: 24px;
+  margin: 32px 0 0 184px;
   line-height: 30px;
   color: #070a22;
-  text-align: end;
-  font-weight: 900;
 }
-/* line 28, ../sass/org_register.scss */
-#org_register .lines input[type=text], #org_register .lines input[type=password] {
-  width: 208px;
-  height: 28px;
-  border: #cbcbcb 1px solid;
+/* line 49, ../sass/settings.scss */
+#user_main #user .settings_title {
   float: left;
-  background-color: #f7f4f4;
-  padding: 0 5px;
+  width: 100%;
+  height: 30px;
+  box-sizing: border-box;
+  margin-top: 90px;
+  padding-left: 50px;
+  font-size: 18px;
+  line-height: 30px;
+  color: #070a22;
+  border-bottom: #ecebe9 1px solid;
 }
-/* line 36, ../sass/org_register.scss */
-#org_register .lines input[type=file] {
-  display: none;
+/* line 61, ../sass/settings.scss */
+#user_main #user #basic_info, #user_main #user #basic_info_org {
+  width: 880px;
+  height: auto;
+  float: left;
+  margin: 0 60px;
+  border-bottom: #ecebe9 1px dotted;
+  overflow: hidden;
 }
-/* line 39, ../sass/org_register.scss */
-#org_register .lines div.file {
-  width: 86px;
+/* line 68, ../sass/settings.scss */
+#user_main #user #basic_info .bor_b, #user_main #user #basic_info_org .bor_b {
+  border-bottom: #ecebe9 1px dotted;
+}
+/* line 71, ../sass/settings.scss */
+#user_main #user #basic_info input.org_submit, #user_main #user #basic_info_org input.org_submit {
+  width: 116px;
+  height: 36px;
+  background: url(../images/login_submit.jpg) repeat-x;
+  float: left;
+  font-size: 16px;
+  color: white;
+  margin: 30px 382px 0;
+}
+/* line 80, ../sass/settings.scss */
+#user_main #user #basic_info .lines, #user_main #user #basic_info_org .lines {
+  width: 100%;
+  height: auto;
+  float: left;
+  padding: 10px 0 17px;
+}
+/* line 85, ../sass/settings.scss */
+#user_main #user #basic_info .lines label, #user_main #user #basic_info_org .lines label {
+  width: 150px;
+  height: 36px;
+  float: left;
+  padding-left: 16px;
+  font-size: 16px;
+  line-height: 36px;
+  color: #070a22;
+}
+/* line 94, ../sass/settings.scss */
+#user_main #user #basic_info .lines input[type=text], #user_main #user #basic_info_org .lines input[type=text] {
+  width: 180px;
   height: 34px;
   border: #cbcbcb 1px solid;
   float: left;
+  font-size: 14px;
+  padding: 0 9px;
+  color: #999999;
+  background-color: #f7f4f4;
+}
+/* line 104, ../sass/settings.scss */
+#user_main #user #basic_info .lines .preview, #user_main #user #basic_info_org .lines .preview {
+  width: 40px;
+  height: 40px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+}
+/* line 110, ../sass/settings.scss */
+#user_main #user #basic_info .lines .preview img, #user_main #user #basic_info_org .lines .preview img {
+  position: absolute;
+}
+/* line 114, ../sass/settings.scss */
+#user_main #user #basic_info .lines button.upload, #user_main #user #basic_info_org .lines button.upload {
+  width: 98px;
+  height: 28px;
+  float: left;
+  font-size: 14px;
+  border: #cbcbcb 1px solid;
+  color: #999999;
   background-color: #f7f4f4;
   text-align: center;
-  line-height: 34px;
-  color: #999999;
-  cursor: pointer;
+  margin: 3px 353px 3px 20px;
 }
-/* line 50, ../sass/org_register.scss */
-#org_register .lines p.file_add {
-  width: auto;
-  height: 36px;
-  float: left;
-  margin-left: 12px;
-  font-size: 14px;
-  color: #999999;
-  line-height: 36px;
+/* line 125, ../sass/settings.scss */
+#user_main #user #basic_info .lines input.submit_s, #user_main #user #basic_info_org .lines input.submit_s {
+  width: 74px;
+  height: 31px;
+  float: right;
+  font-size: 16px;
+  margin: 3px 129px 3px 0;
+  background: url(../images/submit_s.jpg) repeat-x;
+  color: white;
 }
-/* line 59, ../sass/org_register.scss */
-#org_register .lines p.base {
-  width: auto;
-  height: 36px;
-  float: left;
-  font-size: 14px;
-  line-height: 36px;
-  padding-left: 20px;
-  margin-left: 12px;
+/* line 134, ../sass/settings.scss */
+#user_main #user #basic_info .lines input[type=file], #user_main #user #basic_info_org .lines input[type=file] {
   display: none;
 }
-/* line 69, ../sass/org_register.scss */
-#org_register .lines p.true {
-  color: #0cba29;
-  background: url(../images/true.png) left center no-repeat;
+/* line 137, ../sass/settings.scss */
+#user_main #user #basic_info .lines div.img_manage, #user_main #user #basic_info_org .lines div.img_manage {
+  width: 100%;
+  height: auto;
+  float: left;
+  margin-top: 10px;
+  box-sizing: border-box;
+  padding-left: 166px;
+  display: none;
 }
-/* line 73, ../sass/org_register.scss */
-#org_register .lines p.false {
+/* line 145, ../sass/settings.scss */
+#user_main #user #basic_info .lines div.img_manage .img_wrap, #user_main #user #basic_info_org .lines div.img_manage .img_wrap {
+  width: auto;
+  height: auto;
+  float: left;
+  position: relative;
+}
+/* line 150, ../sass/settings.scss */
+#user_main #user #basic_info .lines div.img_manage .img_wrap #big_img, #user_main #user #basic_info_org .lines div.img_manage .img_wrap #big_img {
+  float: left;
+}
+/* line 153, ../sass/settings.scss */
+#user_main #user #basic_info .lines div.img_manage .img_wrap .main, #user_main #user #basic_info_org .lines div.img_manage .img_wrap .main {
+  position: absolute;
+  background: transparent;
+  top: 0;
+  left: 0;
+  cursor: move;
+  z-index: 2;
+}
+/* line 161, ../sass/settings.scss */
+#user_main #user #basic_info .lines div.img_manage .img_wrap .top, #user_main #user #basic_info .lines div.img_manage .img_wrap .right, #user_main #user #basic_info .lines div.img_manage .img_wrap .bottom, #user_main #user #basic_info .lines div.img_manage .img_wrap .left, #user_main #user #basic_info_org .lines div.img_manage .img_wrap .top, #user_main #user #basic_info_org .lines div.img_manage .img_wrap .right, #user_main #user #basic_info_org .lines div.img_manage .img_wrap .bottom, #user_main #user #basic_info_org .lines div.img_manage .img_wrap .left {
+  position: absolute;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.15);
+}
+/* line 166, ../sass/settings.scss */
+#user_main #user #basic_info .lines div.img_manage .img_wrap .top, #user_main #user #basic_info_org .lines div.img_manage .img_wrap .top {
+  top: 0;
+  left: 0;
+}
+/* line 170, ../sass/settings.scss */
+#user_main #user #basic_info .lines div.img_manage .img_wrap .right, #user_main #user #basic_info_org .lines div.img_manage .img_wrap .right {
+  top: 0;
+  right: 0;
+}
+/* line 174, ../sass/settings.scss */
+#user_main #user #basic_info .lines div.img_manage .img_wrap .bottom, #user_main #user #basic_info_org .lines div.img_manage .img_wrap .bottom {
+  bottom: 0;
+  left: 0;
+}
+/* line 178, ../sass/settings.scss */
+#user_main #user #basic_info .lines div.img_manage .img_wrap .left, #user_main #user #basic_info_org .lines div.img_manage .img_wrap .left {
+  top: 0;
+  left: 0;
+}
+/* line 184, ../sass/settings.scss */
+#user_main #user #basic_info .lines p.base, #user_main #user #basic_info_org .lines p.base {
+  width: auto;
+  height: 30px;
+  float: left;
+  font-size: 14px;
+  line-height: 30px;
+  padding-left: 20px;
+  margin: 3px 0 3px 12px;
+  display: none;
+}
+/* line 194, ../sass/settings.scss */
+#user_main #user #basic_info .lines p.false, #user_main #user #basic_info_org .lines p.false {
   color: #e60012;
   background: url(../images/false.png) left center no-repeat;
 }
-/* line 78, ../sass/org_register.scss */
-#org_register input.apply {
-  width: 200px;
+/* line 200, ../sass/settings.scss */
+#user_main #user #basic_info_org {
+  border-bottom: 0;
+}
+/* line 203, ../sass/settings.scss */
+#user_main #user #resume {
+  width: 880px;
+  height: auto;
+  box-sizing: border-box;
+  margin: 0 60px;
+  border-bottom: #ecebe9 1px dotted;
+  float: left;
+}
+/* line 210, ../sass/settings.scss */
+#user_main #user #resume p.title {
+  width: 100%;
+  height: 40px;
+  float: left;
+  box-sizing: border-box;
+  padding-left: 16px;
+  color: #070a22;
+  font-size: 16px;
+  line-height: 40px;
+}
+/* line 220, ../sass/settings.scss */
+#user_main #user #resume .resume_form {
+  width: 660px;
+  height: 434px;
+  float: left;
+  padding: 29px 110px 10px;
+}
+/* line 226, ../sass/settings.scss */
+#user_main #user #resume .resume_form div.one_inch {
+  width: 110px;
+  height: auto;
+  float: right;
+}
+/* line 230, ../sass/settings.scss */
+#user_main #user #resume .resume_form div.one_inch img {
+  float: right;
+  width: 110px;
+  height: 163px;
+}
+/* line 235, ../sass/settings.scss */
+#user_main #user #resume .resume_form div.one_inch label {
+  width: 110px;
+  height: 28px;
+  float: left;
+  border: #cbcbcb 1px solid;
+  text-align: center;
+  font-size: 14px;
+  line-height: 28px;
+  color: #999999;
+  background-color: #f7f4f4;
+  margin-top: 10px;
+}
+/* line 247, ../sass/settings.scss */
+#user_main #user #resume .resume_form div.one_inch input[type=file] {
+  display: none;
+}
+/* line 251, ../sass/settings.scss */
+#user_main #user #resume .resume_form .lines {
+  width: 544px;
   height: 36px;
   float: left;
-  margin: 16px 0 0 20px;
+  margin-bottom: 10px;
+}
+/* line 256, ../sass/settings.scss */
+#user_main #user #resume .resume_form .lines .left {
+  width: 58px;
+  height: 36px;
+  float: left;
+  font-size: 16px;
+  line-height: 36px;
+  color: #070a22;
+}
+/* line 264, ../sass/settings.scss */
+#user_main #user #resume .resume_form .lines label.right {
+  float: left;
+  margin: 0 30px;
+  height: 36px;
+  font-size: 16px;
+  line-height: 36px;
+  color: #999999;
+}
+/* line 271, ../sass/settings.scss */
+#user_main #user #resume .resume_form .lines label.right input {
+  margin-right: 10px;
+}
+/* line 275, ../sass/settings.scss */
+#user_main #user #resume .resume_form .lines input[type=text] {
+  width: 178px;
+  height: 34px;
+  padding: 0 10px;
+  float: left;
+  border: #cbcbcb 1px solid;
+  color: #999999;
+  background-color: #f7f4f4;
+}
+/* line 285, ../sass/settings.scss */
+#user_main #user #resume .resume_form input[type=submit] {
+  width: 116px;
+  height: 36px;
   background: url(../images/login_submit.jpg) repeat-x;
+  float: left;
+  font-size: 16px;
   color: white;
-  font-size: 18px;
-  cursor: pointer;
+  margin: 30px 272px 0;
+}
+/* line 296, ../sass/settings.scss */
+#user_main #user #passport {
+  width: 880px;
+  height: 69px;
+  margin: 0 60px;
+  float: left;
+  border-bottom: #ecebe9 1px dotted;
+}
+/* line 302, ../sass/settings.scss */
+#user_main #user #passport p.left {
+  width: 110px;
+  height: 69px;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  line-height: 69px;
+  color: #070a22;
+}
+/* line 311, ../sass/settings.scss */
+#user_main #user #passport a.right {
+  width: auto;
+  height: 69px;
+  display: block;
+  float: left;
+  font-size: 16px;
+  line-height: 69px;
+  color: #999999;
+  text-decoration: none;
 }

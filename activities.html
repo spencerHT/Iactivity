@@ -141,33 +141,39 @@
                         <textarea name="comments_main" id="comments_main"></textarea>
                         <input type="submit" value="添加评论">
                     </form>
-                    <div class="comments_main">
-                        <img src="images/person_head.jpg" alt="用户头像">
-                        <div class="content">
-                            <div class="content_left">
-                                <a href="javascript:void(0)" class="writer">时光里温柔不朽</a>
-                                <span>：</span>
+                    <div class="comments">
+                        <div class="comments_main" data-list="1">
+                            <img src="images/person_head.jpg" alt="用户头像">
+                            <div class="content">
+                                <div class="content_left">
+                                    <a href="javascript:void(0)" class="writer">时光里温柔不朽</a>
+                                    <span>：</span>
+                                </div>
+                                <div class="content_right">
+                                    <span>啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊结束</span>
+                                </div>
                             </div>
-                            <div class="content_right">
-                                <span>啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊结束</span>
-                            </div>
+                            <p class="time">7月16日&nbsp;13:23</p>
+                            <a href="javascript:void(0)" class="return">回复</a>
+                            <form action="#" class="sub_form">
+                                <textarea name="comments_main" id="comments_main"></textarea>
+                                <input type="submit" value="回复">
+                            </form>
                         </div>
-                        <p class="time">7月16日&nbsp;13:23</p>
-                        <a href="javascript:void(0)" class="return">回复</a>
-                    </div>
-                    <div class="comments_sub">
-                        <img src="images/person_head.jpg" alt="用户头像">
-                        <div class="content">
-                            <div class="content_left">
-                                <a href="javascript:void(0)" class="writer">时光里温柔不朽</a>
-                                <span>：</span>
+                        <div class="comments_sub">
+                            <img src="images/person_head.jpg" alt="用户头像">
+                            <div class="content">
+                                <div class="content_left">
+                                    <a href="javascript:void(0)" class="writer">时光里温柔不朽</a>
+                                    <span>：</span>
+                                </div>
+                                <div class="content_right">
+                                    <span>回复<a href="javascript:void(0)" class="forer">@皮卡丘喵喵哒</a>:啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊结束</span>
+                                </div>
                             </div>
-                            <div class="content_right">
-                                <span>回复<a href="javascript:void(0)" class="forer">@皮卡丘喵喵哒</a>:啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊结束</span>
-                            </div>
+                            <p class="time">7月16日&nbsp;13:23</p>
+                            <a href="javascript:void(0)" class="return">回复</a>
                         </div>
-                        <p class="time">7月16日&nbsp;13:23</p>
-                        <a href="javascript:void(0)" class="return">回复</a>
                     </div>
                 </div>
             </div>
@@ -175,6 +181,13 @@
         <div class="act_right">
             <img src="images/person_head.jpg" alt="发布者头像" class="sentor">
             <p class="sentor">发布者</p>
+            <div class="interest">
+                <div class="interest_left">
+                    <div class="heart"></div>
+                    <p class="word">关注</p>
+                </div>
+                <p class="interest_right">123</p>
+            </div>
             <div class="time">
                 <p>时间</p>
                 <p>2015.07.25</p>
@@ -183,8 +196,6 @@
                 <p>地点</p>
                 <p>山大中心校区</p>
             </div>
-            <div class="big_button">活动内容编辑</div>
-            <!--<div class="big_button">我要报名</div>-->
             <a href="javascript:void(0)" class="download">下载报名表</a>
             <ul class="types">
                 <li class="college">政治学与公共管理学院</li>
@@ -192,6 +203,8 @@
                 <li class="org">学生在线</li>
                 <li class="type">音乐</li>
             </ul>
+            <!--<div class="big_button">活动内容编辑</div>-->
+            <div class="big_button" id="enroll">我要报名</div>
         </div>
     </div>
 </div>
@@ -212,16 +225,53 @@
                 <span>&nbsp;&middot;&nbsp;</span>
                 <li><a href="javasript:void(0)">关于缤纷</a></li>
             </ul>
-            <p>Copyright © 2000-2015 www.online.sdu.edu.cn All Rights Reserved.</p>
+            <p>Copyright © 2000-2015 www.online.sdu.edu.cn All Righ8ts Reserved.</p>
             <p>鲁ICP备030304号 SDU ICP 0009号</p>
         </div>
     </div>
 </div>
 <div class="entry_form_bg">
-    <div class="entry_form">
+    <form class="entry_form" action="#">
         <p class="title">报名表</p>
         <img src="images/one_inch.jpg" alt="报名一寸照" class="one_inch">
-    </div>
+        <div class="input_lines">
+            <p class="left">姓名</p>
+            <p class="right">徐晨烨</p>
+        </div>
+        <div class="input_lines">
+            <p class="left">性别</p>
+            <label for="male"><input type="radio" id="male" name="sex">男</label>
+            <label for="female"><input type="radio" id="female" name="sex">女</label>
+        </div>
+        <div class="input_lines">
+            <p class="left">学号</p>
+            <p class="right">2013001500222</p>
+        </div>
+        <div class="input_lines">
+            <p class="left">学院</p>
+            <p class="right">机械学院</p>
+        </div>
+        <div class="input_lines">
+            <p class="left">年级</p>
+            <p class="right">2014级</p>
+        </div>
+        <div class="input_lines">
+            <p class="left">校区</p>
+            <p class="right">兴隆山校区</p>
+        </div>
+        <div class="input_lines blank">
+            <p class="left">手机</p>
+            <input type="text" class="right">
+        </div>
+        <div class="input_lines">
+            <p class="left">邮箱</p>
+            <p class="right">15555555@qq.com</p>
+        </div>
+        <p class="other_q_head">开放性问题填写</p>
+        <p class="other_questions_title">缩，缤纷拖了多长时间了（怕被打赶紧跑开…）</p>
+        <textarea name="q1" id="q1" class="answer"></textarea>
+        <input type="submit" class="entry_submit">
+    </form>
 </div>
 </body>
 </html>
