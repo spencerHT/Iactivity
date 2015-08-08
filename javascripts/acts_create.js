@@ -1,41 +1,52 @@
 $(function(){
-    $(".upload").click(function(){
-        $("label[for='user_head']").click();
-    });
-    function show_false(main,word) {
-        main.parent().find("p.false").html(word);
-        main.parent().find("p.false").show();
-    };
-
-    function hide_return(main) {
-        main.parent().find("p.false").hide();
-    };
-
-    function img_init(main,delta,preview_out) {
-        var par = main.parent();
-        var x = main.width();
-        var y = main.height();
-        var left_,top_;
-        var preview = preview_out.width();
-        if (x >= y) {
-            var main = y - delta;
-            par.children(".main").width(y-delta).height(y-delta);
-            par.children(".top").width(y-delta).height(0);
-            par.children(".right").width(x-y+delta).height(y);
-            par.children(".bottom").width(y-delta).height(delta);
-            par.children(".left").width(0).height(y);
+    function all(node){
+        var type = $(node).parent().parent(".block").attr("data-type");
+        if (type) {
+            if (parseInt($(node).attr("data-role")) % 1000 == 0) {
+                $(node).parent().parent(".block").find("p").removeClass("z-select");
+                $(node).addClass("z-select");
+            }
+            else {
+                $(node).parent().parent(".block").find("p").eq(0).removeClass("z-select");
+            }
+           
+        };
+    }
+    $("#sort_part").find("p").click(function(){
+        console.log(this);
+        if(!$(this).hasClass("z-select")) {
+            $(this).addClass("z-select");
+            all(this);      
         }
         else {
-            var main = x - delta;
-            par.children(".main").width(x-delta).height(x-delta);
-            par.children(".top").width(x-delta).height(0);
-            par.children(".right").width(delta).height(y);
-            par.children(".bottom").width(x-delta).height(y-x+delta);
-            par.children(".left").width(0).height(y);
+            $(this).removeClass("z-select");
         }
-        var px = main / preview;
-        preview_out.children("img").width(x / px);
-        preview_out.children("img").height(y / px);        
+        var d=[],i=0,j=0;
+        $(".block").each(function(){
+            d[i] = [];
+            $(this).find(".z-select").each(function(){
+                d[i][j] = $(this).attr("data-role");
+                j++;
+            })
+            j=0;
+            i++;
+        })
+        // console.log(d);
+    })
+
+
+    function img_init(main,main_x,main_y) {
+        var par = main.parent();
+        var x = main_x || main.width();
+        var y = main_y || main.height();
+        var par_x = par[0].offsetWidth;
+        var par_y = par[0].offsetHeight;
+        var left_,top_;
+        par.children(".main").width(x).height(y);
+        par.children(".top").width(x).height(0);
+        par.children(".right").width(par_x - x).height(par_y);
+        par.children(".bottom").width(x).height(par_y - y);
+        par.children(".left").width(0).height(par_y);
         var move_x,move_y,move_x_,move_y_,start = false,left,top;
         par.children(".main").on("mousedown",function(e){
             start = true;
@@ -52,20 +63,18 @@ $(function(){
                 move_y_ = e.clientY;
                 left_ = left + move_x_ - move_x;
                 top_ = top + move_y_ - move_y;
-                if (left_ >= 0 && left_ <= x-main) {
+                if (left_ >= 0 && left_ <= par_x - x) {
                     $(this).css("left", left_);
-                    par.children(".right").width(delta - left_);
+                    par.children(".right").width(par_x - x - left_);
                     par.children(".left").width(left_);
                     par.children(".top").css("left", left_);
                     par.children(".bottom").css("left", left_);
-                    preview_out.children("img").css("left", - left_ / px);
                     par.children(".main").css("left", left_);
                 }
-                if (top_ >= 0 && top_ <= y-main) {
+                if (top_ >= 0 && top_ <=  par_y - y) {
                     par.children(".main").css("top", top_);
                     par.children(".top").height(top_);
-                    par.children(".bottom").height(delta - top_);
-                    preview_out.children("img").css("top", - top_ / px);
+                    par.children(".bottom").height(par_y - y - top_);
                 }
             };
         }).on("mouseup",function(){
@@ -74,16 +83,13 @@ $(function(){
             // console.log(top_);
         })
     }
-    $("#user_head").on("change",function(){
+    $("#act_pic").on("change",function(){
         var data = "images/default_header.jpg";
         $(".img_manage").show();
         $("#big_img").attr("src",data);
-        $(".preview").children("img").attr("src",data);
         $("#big_img")[0].onload = function(){
-            var delta = 30;
-            img_init($(this),delta,$(".preview"));
+            img_init($(this),200,150);
         }
-        // hide_return($(this));
         // var text = $(this).val();
         // var parts = text.split(".");
         // var suffix = parts[parts.length-1];
@@ -104,7 +110,7 @@ $(function(){
         //     show_false($(this),"您提交的图片过大！");
         // }
         // else {
-        //     var data = new FormData($("#head_pic")[0])
+        //     var data = new FormData($("#pic")[0])
         //     $.ajax({
         //         url: '' ,
         //         type: 'POST',
@@ -113,8 +119,6 @@ $(function(){
         //         async: false,
         //         success: function (data) {
         //             if (data){
-        //                 $("#big_img").show();
-        //                 $("#big_img").attr("src",data);
         //             }
         //         },
         //         error: function (data) {
@@ -122,5 +126,24 @@ $(function(){
         //         }
         //     });
         // }
+    })
+    $(".add").click(function(){
+        var num = $(this).parent().find("input").length;
+        $("<input type='text' placeholder='问题' name='q"+(num+1)+"'>").insertBefore($(this))
+    });
+    $(".lines_right").each(function(){
+        $(this).find("a").click(function(){
+            if ($(this).hasClass("up")) {
+                $(this).parent().parent(".lines").find(".lines_mid").animate({"height":0},200);
+                $(this).removeClass("up");
+                $(this).addClass("down");
+            }
+            else if($(this).hasClass("down")) {
+                $(this).parent().parent(".lines").find(".lines_mid").css("height","auto");
+                $(this).removeClass("down");
+                $(this).addClass("up");
+
+            }
+        })
     })
 })

@@ -35,9 +35,20 @@ $(function(){
         $(this).parent().find(".summry_more").animate({"top":"349px"},500);
         // $(this).parent().find(".summry_more").delay(1000).hide();
     })
+
     $(".m-act").mouseenter(function(){
         $(this).addClass("z-select");
     }).mouseleave(function(){
         $(this).removeClass("z-select");
+    })
+
+    $(".g-right_list").children("li").eq(1).click(function(){
+        $(".g-letter_bg").show();
+    })
+    $(".done").click(function(){
+        $(".g-letter_bg").hide();
+    })
+    $(".enter").click(function(){
+        
     })
 })
